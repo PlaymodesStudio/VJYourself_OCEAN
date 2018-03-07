@@ -1,6 +1,7 @@
 #include "VideoGrabberNodeBased.h"
 #include "VideoRendererNodeBased.h"
 #include "LumaFilterNodeBased.h"
+#include "VideoBufferNodeBased.h"
 
 #include "ofApp.h"
 #include "testNode.h"
@@ -16,6 +17,7 @@ void ofApp::setup(){
     reg->registerModel<ofxPm::VideoGrabberNodeBased>();
     reg->registerModel<ofxPm::VideoRendererNodeBased>();
     reg->registerModel<ofxPm::LumaFilterNodeBased>();
+    reg->registerModel<ofxPm::VideoBufferNodeBased>();
     
     container = new ofxOceanodeContainer(reg);
     canvas.setContainer(container);

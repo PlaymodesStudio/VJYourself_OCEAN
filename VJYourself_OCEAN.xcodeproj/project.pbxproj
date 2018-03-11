@@ -30,6 +30,10 @@
 		B0BE82E6205041D200BF57C7 /* VideoRendererNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0BE82C6205041D200BF57C7 /* VideoRendererNodeBased.cpp */; };
 		B0BE82E7205041D200BF57C7 /* ofxObjCPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0BE82D5205041D200BF57C7 /* ofxObjCPointer.cpp */; };
 		B0BE82EA2050422600BF57C7 /* VideoBufferNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0BE82E82050422600BF57C7 /* VideoBufferNodeBased.cpp */; };
+		B0ED0EAF20504AF10067E155 /* VideoHeaderNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0ED0EAD20504AF10067E155 /* VideoHeaderNodeBased.cpp */; };
+		B0ED0EB220505B210067E155 /* ranger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0ED0EB020505B210067E155 /* ranger.cpp */; };
+		B0ED0EB520506C080067E155 /* FeedbackFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0ED0EB320506C080067E155 /* FeedbackFilterNodeBased.cpp */; };
+		B0ED0EBB20509BCE0067E155 /* MultixFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0ED0EB920509BCE0067E155 /* MultixFilter.cpp */; };
 		B7559FEE382DBA7FB094D5E7 /* ofxOceanodeNodeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15C9896F6A32FCA280CD4B5 /* ofxOceanodeNodeRegistry.cpp */; };
 		BE7DAF3CB982C2BD0FE44648 /* ofxDatGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD8F81F7AAB5BA396231DD4C /* ofxDatGui.cpp */; };
 		C1EEF98E795AFB7BB33F94B1 /* ofxOceanodeConnectionGraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AFF92A62D8AF4E498DB5C3 /* ofxOceanodeConnectionGraphics.cpp */; };
@@ -199,6 +203,14 @@
 		B0BE82D8205041D200BF57C7 /* VideoFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFormat.h; sourceTree = "<group>"; };
 		B0BE82E82050422600BF57C7 /* VideoBufferNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoBufferNodeBased.cpp; sourceTree = "<group>"; };
 		B0BE82E92050422600BF57C7 /* VideoBufferNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBufferNodeBased.h; sourceTree = "<group>"; };
+		B0ED0EAD20504AF10067E155 /* VideoHeaderNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoHeaderNodeBased.cpp; sourceTree = "<group>"; };
+		B0ED0EAE20504AF10067E155 /* VideoHeaderNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoHeaderNodeBased.h; sourceTree = "<group>"; };
+		B0ED0EB020505B210067E155 /* ranger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ranger.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/ranger.cpp; sourceTree = "<group>"; };
+		B0ED0EB120505B210067E155 /* ranger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ranger.h; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/ranger.h; sourceTree = "<group>"; };
+		B0ED0EB320506C080067E155 /* FeedbackFilterNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FeedbackFilterNodeBased.cpp; sourceTree = "<group>"; };
+		B0ED0EB420506C080067E155 /* FeedbackFilterNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackFilterNodeBased.h; sourceTree = "<group>"; };
+		B0ED0EB920509BCE0067E155 /* MultixFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultixFilter.cpp; sourceTree = "<group>"; };
+		B0ED0EBA20509BCE0067E155 /* MultixFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultixFilter.h; sourceTree = "<group>"; };
 		B11DB438E2A6EBD360F8BA50 /* ofxDatGuiFRM.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDatGuiFRM.h; path = ../../../addons/ofxDatGui_PM/src/components/ofxDatGuiFRM.h; sourceTree = SOURCE_ROOT; };
 		B1CC96657896D2F948104F3D /* seed.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = seed.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/seed.h; sourceTree = SOURCE_ROOT; };
 		B2D9BED8F594CFBBD0821E7E /* mdc2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mdc2.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/mdc2.h; sourceTree = SOURCE_ROOT; };
@@ -320,6 +332,8 @@
 		4A0C0B233C38AF6788F3CE7D /* Default_Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				B0ED0EB020505B210067E155 /* ranger.cpp */,
+				B0ED0EB120505B210067E155 /* ranger.h */,
 				9379E6001D7EB3C9ED6E3741 /* baseIndexer.cpp */,
 				F5AEF5B3ACCE46DC3D82353C /* baseIndexer.h */,
 				21F7AAAF4B49DDFC26309F29 /* baseOscillator.cpp */,
@@ -491,6 +505,7 @@
 		B0BE82A4205041D200BF57C7 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B0ED0EAC20504AF10067E155 /* headers */,
 				B0BE82A5205041D200BF57C7 /* buffers */,
 				B0BE82AA205041D200BF57C7 /* filters */,
 				B0BE82B7205041D200BF57C7 /* frames */,
@@ -517,6 +532,10 @@
 		B0BE82AA205041D200BF57C7 /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				B0ED0EB920509BCE0067E155 /* MultixFilter.cpp */,
+				B0ED0EBA20509BCE0067E155 /* MultixFilter.h */,
+				B0ED0EB320506C080067E155 /* FeedbackFilterNodeBased.cpp */,
+				B0ED0EB420506C080067E155 /* FeedbackFilterNodeBased.h */,
 				B0BE82B1205041D200BF57C7 /* LumaFilterNodeBased.cpp */,
 				B0BE82B2205041D200BF57C7 /* LumaFilterNodeBased.h */,
 				B0BE82B5205041D200BF57C7 /* VideoFilter.cpp */,
@@ -600,6 +619,15 @@
 				B0BE82D8205041D200BF57C7 /* VideoFormat.h */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		B0ED0EAC20504AF10067E155 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				B0ED0EAD20504AF10067E155 /* VideoHeaderNodeBased.cpp */,
+				B0ED0EAE20504AF10067E155 /* VideoHeaderNodeBased.h */,
+			);
+			path = headers;
 			sourceTree = "<group>";
 		};
 		B2C98B62869583DB9FE30DA7 /* openssl */ = {
@@ -830,9 +858,11 @@
 			files = (
 				B0BE82E2205041D200BF57C7 /* VideoFrame.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				B0ED0EAF20504AF10067E155 /* VideoHeaderNodeBased.cpp in Sources */,
 				B0BE82E1205041D200BF57C7 /* Frame.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				A670837F6999677674A385D1 /* testNode.cpp in Sources */,
+				B0ED0EBB20509BCE0067E155 /* MultixFilter.cpp in Sources */,
 				B0BE82D9205041D200BF57C7 /* Buffer.cpp in Sources */,
 				4A277DA746402C76CE307770 /* ofxDatGuiComponent.cpp in Sources */,
 				646DF4D56CE728133610A7F6 /* ofxSmartFont.cpp in Sources */,
@@ -842,6 +872,7 @@
 				C1EEF98E795AFB7BB33F94B1 /* ofxOceanodeConnectionGraphics.cpp in Sources */,
 				FE7602E65C7BA676951A37FB /* ofxOceanodeCanvas.cpp in Sources */,
 				5769B6A6D79188D3D351933E /* ofxOceanodeContainer.cpp in Sources */,
+				B0ED0EB520506C080067E155 /* FeedbackFilterNodeBased.cpp in Sources */,
 				B7559FEE382DBA7FB094D5E7 /* ofxOceanodeNodeRegistry.cpp in Sources */,
 				B0BE82E7205041D200BF57C7 /* ofxObjCPointer.cpp in Sources */,
 				EB5B77357A54C0E2DED32C3E /* baseIndexer.cpp in Sources */,
@@ -859,6 +890,7 @@
 				4F63EFF3BAACF2B19051E336 /* ofxOceanodeNodeModel.cpp in Sources */,
 				B0BE82E4205041D200BF57C7 /* VideoSink.cpp in Sources */,
 				1C36947250DCB09A8A375C0C /* ofxXmlPoco.cpp in Sources */,
+				B0ED0EB220505B210067E155 /* ranger.cpp in Sources */,
 				B0BE82EA2050422600BF57C7 /* VideoBufferNodeBased.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

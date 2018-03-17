@@ -27,5 +27,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     ofxOceanodeCanvas canvas;
-    ofxOceanodeContainer* container;		
+    shared_ptr<ofxOceanodeContainer> container;
+    ofxOceanodeControls* controls;
+
 };

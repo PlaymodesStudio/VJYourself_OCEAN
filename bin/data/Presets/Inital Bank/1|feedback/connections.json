@@ -1,0 +1,16 @@
+{
+    "Feedback_FX_1": {
+        "Frame Output": {
+            "Video_Renderer_1": {
+                "Frame In": null
+            }
+        }
+    },
+    "Video_Grabber_1": {
+        "Frame Output": {
+            "Feedback_FX_1": {
+                "Frame Input": null
+            }
+        }
+    }
+}

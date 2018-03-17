@@ -1,0 +1,11 @@
+{
+    "Beats_Div": "1",
+    "Beats_Mult": "1",
+    "Distribution_Vector": 0.0,
+    "Linear_Distribution": "1",
+    "Manual_Offset_Ms": "33",
+    "MinMax_Blend": "1",
+    "Num_Headers": "8",
+    "Opacity_Mode": "0",
+    "Use_BPM": "1"
+}

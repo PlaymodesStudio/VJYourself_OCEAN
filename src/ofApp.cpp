@@ -5,6 +5,9 @@
 #include "VideoHeaderNodeBased.h"
 #include "FeedbackFilterNodeBased.h"
 #include "MultixFilter.h"
+#include "VideoGrabberPS3EyeNodeBased.h"
+#include "LooperFilter.h"
+
 #include "ofApp.h"
 #include "testNode.h"
 
@@ -22,12 +25,17 @@ void ofApp::setup(){
     reg->registerModel<ofxPm::VideoBufferNodeBased>();
     reg->registerModel<ofxPm::VideoHeaderNodeBased>();
     reg->registerModel<ofxPm::FeedbackFilterNodeBased>();
+    reg->registerModel<ofxPm::VideoGrabberPS3EyeNodeBased>();
+    reg->registerModel<ofxPm::LooperFilter>();
+    
     reg->registerModel<ofxPm::MultixFilter>();
     
-    container = new ofxOceanodeContainer(reg);
+    container = make_shared<ofxOceanodeContainer>(reg);
     canvas.setContainer(container);
-    
     canvas.setup();
+    controls = new ofxOceanodeControls(container);
+
+    
     
     
 }
@@ -39,6 +47,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    ofSetColor(255,0,0);
     ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(0,10));
 }
 

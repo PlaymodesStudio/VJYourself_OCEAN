@@ -19,6 +19,14 @@
 		88B25E219BAC2DF5129EBA2C /* oscillatorBank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01ACCF35B06321B6B9C3E940 /* oscillatorBank.cpp */; };
 		8EB5677652296BACF3A1C184 /* ofxOceanodeNodeGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 170083BFE7EEC5851D5DF9E6 /* ofxOceanodeNodeGui.cpp */; };
 		A670837F6999677674A385D1 /* testNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C84792B71D7D5C105077DBF /* testNode.cpp */; };
+		B008F8AE205C328B00DC510F /* ofxOceanodeBaseController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F8A6205C328B00DC510F /* ofxOceanodeBaseController.cpp */; };
+		B008F8AF205C328B00DC510F /* ofxOceanodeBPMController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F8A8205C328B00DC510F /* ofxOceanodeBPMController.cpp */; };
+		B008F8B0205C328B00DC510F /* ofxOceanodeControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F8AA205C328B00DC510F /* ofxOceanodeControls.cpp */; };
+		B008F8B1205C328B00DC510F /* ofxOceanodePresetsController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F8AC205C328B00DC510F /* ofxOceanodePresetsController.cpp */; };
+		B05852BD20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05852BB20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.cpp */; };
+		B05852C520599F7900BE774D /* ps3eye.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05852C120599F7900BE774D /* ps3eye.cpp */; };
+		B05852C620599F7900BE774D /* ps3eye_capi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05852C320599F7900BE774D /* ps3eye_capi.cpp */; };
+		B05852CC2059AEA800BE774D /* LooperFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05852CA2059AEA800BE774D /* LooperFilter.cpp */; };
 		B0BE82D9205041D200BF57C7 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0BE82A6205041D200BF57C7 /* Buffer.cpp */; };
 		B0BE82DE205041D200BF57C7 /* LumaFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0BE82B1205041D200BF57C7 /* LumaFilterNodeBased.cpp */; };
 		B0BE82E0205041D200BF57C7 /* VideoFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0BE82B5205041D200BF57C7 /* VideoFilter.cpp */; };
@@ -168,6 +176,23 @@
 		A9AA9F290280E04944C1CEEE /* srp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = srp.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/srp.h; sourceTree = SOURCE_ROOT; };
 		AA136346D730CE2FC0EC85CD /* e_os2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = e_os2.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/e_os2.h; sourceTree = SOURCE_ROOT; };
 		AF53C1FCB4DC2DA249C71CE4 /* asn1t.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = asn1t.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/asn1t.h; sourceTree = SOURCE_ROOT; };
+		B008F8A6205C328B00DC510F /* ofxOceanodeBaseController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOceanodeBaseController.cpp; sourceTree = "<group>"; };
+		B008F8A7205C328B00DC510F /* ofxOceanodeBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOceanodeBaseController.h; sourceTree = "<group>"; };
+		B008F8A8205C328B00DC510F /* ofxOceanodeBPMController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOceanodeBPMController.cpp; sourceTree = "<group>"; };
+		B008F8A9205C328B00DC510F /* ofxOceanodeBPMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOceanodeBPMController.h; sourceTree = "<group>"; };
+		B008F8AA205C328B00DC510F /* ofxOceanodeControls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOceanodeControls.cpp; sourceTree = "<group>"; };
+		B008F8AB205C328B00DC510F /* ofxOceanodeControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOceanodeControls.h; sourceTree = "<group>"; };
+		B008F8AC205C328B00DC510F /* ofxOceanodePresetsController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOceanodePresetsController.cpp; sourceTree = "<group>"; };
+		B008F8AD205C328B00DC510F /* ofxOceanodePresetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOceanodePresetsController.h; sourceTree = "<group>"; };
+		B05852BB20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoGrabberPS3EyeNodeBased.cpp; sourceTree = "<group>"; };
+		B05852BC20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoGrabberPS3EyeNodeBased.h; sourceTree = "<group>"; };
+		B05852C120599F7900BE774D /* ps3eye.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ps3eye.cpp; sourceTree = "<group>"; };
+		B05852C220599F7900BE774D /* ps3eye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ps3eye.h; sourceTree = "<group>"; };
+		B05852C320599F7900BE774D /* ps3eye_capi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ps3eye_capi.cpp; sourceTree = "<group>"; };
+		B05852C420599F7900BE774D /* ps3eye_capi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ps3eye_capi.h; sourceTree = "<group>"; };
+		B05852C92059A4C700BE774D /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
+		B05852CA2059AEA800BE774D /* LooperFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LooperFilter.cpp; sourceTree = "<group>"; };
+		B05852CB2059AEA800BE774D /* LooperFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LooperFilter.h; sourceTree = "<group>"; };
 		B0BE82A6205041D200BF57C7 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
 		B0BE82A7205041D200BF57C7 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
 		B0BE82B1205041D200BF57C7 /* LumaFilterNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LumaFilterNodeBased.cpp; sourceTree = "<group>"; };
@@ -485,12 +510,41 @@
 		9BF163AD5F824DF0AD945222 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B008F8A5205C328B00DC510F /* Controls */,
 				9BBF10547B078BE7A527677B /* Connections */,
 				F345CC31328F66B89F4BB079 /* Managers */,
 				6B8A921B73CC6BADD2D0E3A3 /* Nodes */,
 				86F00AF8B1543076FA133A82 /* ofxOceanode.h */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		B008F8A5205C328B00DC510F /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				B008F8A6205C328B00DC510F /* ofxOceanodeBaseController.cpp */,
+				B008F8A7205C328B00DC510F /* ofxOceanodeBaseController.h */,
+				B008F8A8205C328B00DC510F /* ofxOceanodeBPMController.cpp */,
+				B008F8A9205C328B00DC510F /* ofxOceanodeBPMController.h */,
+				B008F8AA205C328B00DC510F /* ofxOceanodeControls.cpp */,
+				B008F8AB205C328B00DC510F /* ofxOceanodeControls.h */,
+				B008F8AC205C328B00DC510F /* ofxOceanodePresetsController.cpp */,
+				B008F8AD205C328B00DC510F /* ofxOceanodePresetsController.h */,
+			);
+			name = Controls;
+			path = ../../../addons/ofxOceanode/src/Controls;
+			sourceTree = "<group>";
+		};
+		B05852C020599F7900BE774D /* ps3eye */ = {
+			isa = PBXGroup;
+			children = (
+				B05852C92059A4C700BE774D /* libusb.h */,
+				B05852C120599F7900BE774D /* ps3eye.cpp */,
+				B05852C220599F7900BE774D /* ps3eye.h */,
+				B05852C320599F7900BE774D /* ps3eye_capi.cpp */,
+				B05852C420599F7900BE774D /* ps3eye_capi.h */,
+			);
+			path = ps3eye;
 			sourceTree = "<group>";
 		};
 		B0BE82A3205041D200BF57C7 /* ofxPlaymodes */ = {
@@ -532,6 +586,8 @@
 		B0BE82AA205041D200BF57C7 /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				B05852CA2059AEA800BE774D /* LooperFilter.cpp */,
+				B05852CB2059AEA800BE774D /* LooperFilter.h */,
 				B0ED0EB920509BCE0067E155 /* MultixFilter.cpp */,
 				B0ED0EBA20509BCE0067E155 /* MultixFilter.h */,
 				B0ED0EB320506C080067E155 /* FeedbackFilterNodeBased.cpp */,
@@ -558,6 +614,9 @@
 		B0BE82BC205041D200BF57C7 /* grabbers */ = {
 			isa = PBXGroup;
 			children = (
+				B05852C020599F7900BE774D /* ps3eye */,
+				B05852BB20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.cpp */,
+				B05852BC20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.h */,
 				B0BE82BD205041D200BF57C7 /* VideoGrabberNodeBased.cpp */,
 				B0BE82BE205041D200BF57C7 /* VideoGrabberNodeBased.h */,
 			);
@@ -856,8 +915,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05852CC2059AEA800BE774D /* LooperFilter.cpp in Sources */,
 				B0BE82E2205041D200BF57C7 /* VideoFrame.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				B008F8B0205C328B00DC510F /* ofxOceanodeControls.cpp in Sources */,
 				B0ED0EAF20504AF10067E155 /* VideoHeaderNodeBased.cpp in Sources */,
 				B0BE82E1205041D200BF57C7 /* Frame.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
@@ -868,16 +929,21 @@
 				646DF4D56CE728133610A7F6 /* ofxSmartFont.cpp in Sources */,
 				B0BE82E5205041D200BF57C7 /* VideoSource.cpp in Sources */,
 				BE7DAF3CB982C2BD0FE44648 /* ofxDatGui.cpp in Sources */,
+				B008F8AF205C328B00DC510F /* ofxOceanodeBPMController.cpp in Sources */,
+				B05852C520599F7900BE774D /* ps3eye.cpp in Sources */,
 				C6A203560BFBDA04C5746210 /* ofxOceanodeConnection.cpp in Sources */,
 				C1EEF98E795AFB7BB33F94B1 /* ofxOceanodeConnectionGraphics.cpp in Sources */,
 				FE7602E65C7BA676951A37FB /* ofxOceanodeCanvas.cpp in Sources */,
+				B05852C620599F7900BE774D /* ps3eye_capi.cpp in Sources */,
 				5769B6A6D79188D3D351933E /* ofxOceanodeContainer.cpp in Sources */,
 				B0ED0EB520506C080067E155 /* FeedbackFilterNodeBased.cpp in Sources */,
 				B7559FEE382DBA7FB094D5E7 /* ofxOceanodeNodeRegistry.cpp in Sources */,
 				B0BE82E7205041D200BF57C7 /* ofxObjCPointer.cpp in Sources */,
 				EB5B77357A54C0E2DED32C3E /* baseIndexer.cpp in Sources */,
+				B05852BD20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.cpp in Sources */,
 				656E7EDB27697DE1D6419CD2 /* baseOscillator.cpp in Sources */,
 				F11E47B208E163D56E3E2701 /* mapper.cpp in Sources */,
+				B008F8AE205C328B00DC510F /* ofxOceanodeBaseController.cpp in Sources */,
 				201715816A8E0C2380C6CA9B /* oscillator.cpp in Sources */,
 				88B25E219BAC2DF5129EBA2C /* oscillatorBank.cpp in Sources */,
 				B0BE82E0205041D200BF57C7 /* VideoFilter.cpp in Sources */,
@@ -885,6 +951,7 @@
 				017F84499F348651B4CAD515 /* phasorClass.cpp in Sources */,
 				4C8024D8DD46223D43C514C0 /* ofxOceanodeNode.cpp in Sources */,
 				B0BE82E3205041D200BF57C7 /* VideoGrabberNodeBased.cpp in Sources */,
+				B008F8B1205C328B00DC510F /* ofxOceanodePresetsController.cpp in Sources */,
 				8EB5677652296BACF3A1C184 /* ofxOceanodeNodeGui.cpp in Sources */,
 				B0BE82DE205041D200BF57C7 /* LumaFilterNodeBased.cpp in Sources */,
 				4F63EFF3BAACF2B19051E336 /* ofxOceanodeNodeModel.cpp in Sources */,
@@ -944,6 +1011,7 @@
 					../../../addons/ofxPoco/libs/poco/include,
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
+					../../../addons/ofxPlaymodes/src/grabbers/ps3eye,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -962,6 +1030,7 @@
 					../../../addons/ofxPoco/libs/poco/lib/osx/PocoFoundation.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/crypto.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/ssl.a,
+					"../../../addons/ofxPlaymodes/src/grabbers/ps3eye/usb-1.0.0.a",
 				);
 				SDKROOT = macosx;
 			};
@@ -994,6 +1063,7 @@
 					../../../addons/ofxPoco/libs/poco/include,
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
+					../../../addons/ofxPlaymodes/src/grabbers/ps3eye,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -1012,6 +1082,7 @@
 					../../../addons/ofxPoco/libs/poco/lib/osx/PocoFoundation.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/crypto.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/ssl.a,
+					"../../../addons/ofxPlaymodes/src/grabbers/ps3eye/usb-1.0.0.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1055,6 +1126,7 @@
 					../../../addons/ofxPoco/libs/poco/include,
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
+					../../../addons/ofxPlaymodes/src/grabbers/ps3eye,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1074,6 +1146,7 @@
 					../../../addons/ofxPoco/libs/poco/lib/osx/PocoFoundation.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/crypto.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/ssl.a,
+					"../../../addons/ofxPlaymodes/src/grabbers/ps3eye/usb-1.0.0.a",
 				);
 				SDKROOT = macosx;
 			};
@@ -1116,6 +1189,7 @@
 					../../../addons/ofxPoco/libs/poco/include,
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
+					../../../addons/ofxPlaymodes/src/grabbers/ps3eye,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -1134,6 +1208,7 @@
 					../../../addons/ofxPoco/libs/poco/lib/osx/PocoFoundation.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/crypto.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/ssl.a,
+					"../../../addons/ofxPlaymodes/src/grabbers/ps3eye/usb-1.0.0.a",
 				);
 				SDKROOT = macosx;
 			};
@@ -1166,6 +1241,7 @@
 					../../../addons/ofxPoco/libs/poco/include,
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
+					../../../addons/ofxPlaymodes/src/grabbers/ps3eye,
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -1184,6 +1260,7 @@
 					../../../addons/ofxPoco/libs/poco/lib/osx/PocoFoundation.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/crypto.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/ssl.a,
+					"../../../addons/ofxPlaymodes/src/grabbers/ps3eye/usb-1.0.0.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -1216,6 +1293,7 @@
 					../../../addons/ofxPoco/libs/poco/include,
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
+					../../../addons/ofxPlaymodes/src/grabbers/ps3eye,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -1234,6 +1312,7 @@
 					../../../addons/ofxPoco/libs/poco/lib/osx/PocoFoundation.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/crypto.a,
 					../../../addons/ofxPoco/libs/openssl/lib/osx/ssl.a,
+					"../../../addons/ofxPlaymodes/src/grabbers/ps3eye/usb-1.0.0.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

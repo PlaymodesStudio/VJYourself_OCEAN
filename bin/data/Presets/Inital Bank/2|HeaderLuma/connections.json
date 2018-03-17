@@ -1,0 +1,30 @@
+{
+    "LumaKey_FX_1": {
+        "Frame Output": {
+            "Video_Buffer_1": {
+                "Frame Input": null
+            }
+        }
+    },
+    "Video_Buffer_1": {
+        "Buffer Output": {
+            "Video_Header_1": {
+                "Buffer Input": null
+            }
+        }
+    },
+    "Video_Grabber_1": {
+        "Frame Output": {
+            "LumaKey_FX_1": {
+                "Frame Input": null
+            }
+        }
+    },
+    "Video_Header_1": {
+        "Frame Output": {
+            "Video_Renderer_1": {
+                "Frame In": null
+            }
+        }
+    }
+}

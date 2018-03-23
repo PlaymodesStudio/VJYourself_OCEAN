@@ -34,9 +34,6 @@ void ofApp::setup(){
     canvas.setContainer(container);
     canvas.setup();
     controls = new ofxOceanodeControls(container);
-
-    
-    
     
 }
 
@@ -48,7 +45,9 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofSetColor(255,0,0);
-    ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(0,10));
+    ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(ofGetWidth()-20,10));
+    ofSetColor(0);
+    ofDrawRectangle(0,0,640, 480);
 }
 
 //--------------------------------------------------------------

@@ -23,6 +23,10 @@
 		B008F8AF205C328B00DC510F /* ofxOceanodeBPMController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F8A8205C328B00DC510F /* ofxOceanodeBPMController.cpp */; };
 		B008F8B0205C328B00DC510F /* ofxOceanodeControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F8AA205C328B00DC510F /* ofxOceanodeControls.cpp */; };
 		B008F8B1205C328B00DC510F /* ofxOceanodePresetsController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B008F8AC205C328B00DC510F /* ofxOceanodePresetsController.cpp */; };
+		B0145C8D20647B0600775082 /* reindexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0145C8920647B0500775082 /* reindexer.cpp */; };
+		B0145C8E20647B0600775082 /* smoother.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0145C8A20647B0500775082 /* smoother.cpp */; };
+		B051E2082062D8D000B75F8A /* basePhasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B051E2072062D8CF00B75F8A /* basePhasor.cpp */; };
+		B051E20B2062DFD100B75F8A /* phasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B051E2092062DFD100B75F8A /* phasor.cpp */; };
 		B05852BD20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05852BB20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.cpp */; };
 		B05852C520599F7900BE774D /* ps3eye.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05852C120599F7900BE774D /* ps3eye.cpp */; };
 		B05852C620599F7900BE774D /* ps3eye_capi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05852C320599F7900BE774D /* ps3eye_capi.cpp */; };
@@ -184,6 +188,14 @@
 		B008F8AB205C328B00DC510F /* ofxOceanodeControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOceanodeControls.h; sourceTree = "<group>"; };
 		B008F8AC205C328B00DC510F /* ofxOceanodePresetsController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOceanodePresetsController.cpp; sourceTree = "<group>"; };
 		B008F8AD205C328B00DC510F /* ofxOceanodePresetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOceanodePresetsController.h; sourceTree = "<group>"; };
+		B0145C8920647B0500775082 /* reindexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = reindexer.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/reindexer.cpp; sourceTree = "<group>"; };
+		B0145C8A20647B0500775082 /* smoother.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = smoother.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/smoother.cpp; sourceTree = "<group>"; };
+		B0145C8B20647B0500775082 /* smoother.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = smoother.h; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/smoother.h; sourceTree = "<group>"; };
+		B0145C8C20647B0500775082 /* reindexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reindexer.h; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/reindexer.h; sourceTree = "<group>"; };
+		B051E2062062D8CF00B75F8A /* basePhasor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basePhasor.h; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/basePhasor.h; sourceTree = "<group>"; };
+		B051E2072062D8CF00B75F8A /* basePhasor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = basePhasor.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/basePhasor.cpp; sourceTree = "<group>"; };
+		B051E2092062DFD100B75F8A /* phasor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = phasor.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/phasor.cpp; sourceTree = "<group>"; };
+		B051E20A2062DFD100B75F8A /* phasor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = phasor.h; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/phasor.h; sourceTree = "<group>"; };
 		B05852BB20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoGrabberPS3EyeNodeBased.cpp; sourceTree = "<group>"; };
 		B05852BC20599D1500BE774D /* VideoGrabberPS3EyeNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoGrabberPS3EyeNodeBased.h; sourceTree = "<group>"; };
 		B05852C120599F7900BE774D /* ps3eye.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ps3eye.cpp; sourceTree = "<group>"; };
@@ -357,6 +369,14 @@
 		4A0C0B233C38AF6788F3CE7D /* Default_Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				B0145C8920647B0500775082 /* reindexer.cpp */,
+				B0145C8C20647B0500775082 /* reindexer.h */,
+				B0145C8A20647B0500775082 /* smoother.cpp */,
+				B0145C8B20647B0500775082 /* smoother.h */,
+				B051E2092062DFD100B75F8A /* phasor.cpp */,
+				B051E20A2062DFD100B75F8A /* phasor.h */,
+				B051E2072062D8CF00B75F8A /* basePhasor.cpp */,
+				B051E2062062D8CF00B75F8A /* basePhasor.h */,
 				B0ED0EB020505B210067E155 /* ranger.cpp */,
 				B0ED0EB120505B210067E155 /* ranger.h */,
 				9379E6001D7EB3C9ED6E3741 /* baseIndexer.cpp */,
@@ -924,10 +944,12 @@
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				A670837F6999677674A385D1 /* testNode.cpp in Sources */,
 				B0ED0EBB20509BCE0067E155 /* MultixFilter.cpp in Sources */,
+				B051E2082062D8D000B75F8A /* basePhasor.cpp in Sources */,
 				B0BE82D9205041D200BF57C7 /* Buffer.cpp in Sources */,
 				4A277DA746402C76CE307770 /* ofxDatGuiComponent.cpp in Sources */,
 				646DF4D56CE728133610A7F6 /* ofxSmartFont.cpp in Sources */,
 				B0BE82E5205041D200BF57C7 /* VideoSource.cpp in Sources */,
+				B0145C8E20647B0600775082 /* smoother.cpp in Sources */,
 				BE7DAF3CB982C2BD0FE44648 /* ofxDatGui.cpp in Sources */,
 				B008F8AF205C328B00DC510F /* ofxOceanodeBPMController.cpp in Sources */,
 				B05852C520599F7900BE774D /* ps3eye.cpp in Sources */,
@@ -946,6 +968,7 @@
 				B008F8AE205C328B00DC510F /* ofxOceanodeBaseController.cpp in Sources */,
 				201715816A8E0C2380C6CA9B /* oscillator.cpp in Sources */,
 				88B25E219BAC2DF5129EBA2C /* oscillatorBank.cpp in Sources */,
+				B051E20B2062DFD100B75F8A /* phasor.cpp in Sources */,
 				B0BE82E0205041D200BF57C7 /* VideoFilter.cpp in Sources */,
 				B0BE82E6205041D200BF57C7 /* VideoRendererNodeBased.cpp in Sources */,
 				017F84499F348651B4CAD515 /* phasorClass.cpp in Sources */,
@@ -957,6 +980,7 @@
 				4F63EFF3BAACF2B19051E336 /* ofxOceanodeNodeModel.cpp in Sources */,
 				B0BE82E4205041D200BF57C7 /* VideoSink.cpp in Sources */,
 				1C36947250DCB09A8A375C0C /* ofxXmlPoco.cpp in Sources */,
+				B0145C8D20647B0600775082 /* reindexer.cpp in Sources */,
 				B0ED0EB220505B210067E155 /* ranger.cpp in Sources */,
 				B0BE82EA2050422600BF57C7 /* VideoBufferNodeBased.cpp in Sources */,
 			);

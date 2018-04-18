@@ -1,5 +1,6 @@
 #include "VideoGrabberNodeBased.h"
 #include "VideoRendererNodeBased.h"
+#include "VideoRendererWindowNodeBased.h"
 #include "LumaFilterNodeBased.h"
 #include "VideoBufferNodeBased.h"
 #include "VideoHeaderNodeBased.h"
@@ -7,29 +8,34 @@
 #include "MultixFilter.h"
 #include "VideoGrabberPS3EyeNodeBased.h"
 #include "LooperFilter.h"
+#include "FrameRateCalculator.h"
 
 #include "ofApp.h"
 #include "testNode.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){
-
+void ofApp::setup()
+{
     ofDisableArbTex();
-
+    ofSetVerticalSync(false);
+    ofBackground(20,20,20);
+    
     auto reg = make_shared<ofxOceanodeNodeRegistry>();
     
-    reg->registerModel<testNode>();
-    reg->registerModel<ofxPm::VideoGrabberNodeBased>();
-    reg->registerModel<ofxPm::VideoRendererNodeBased>();
-    reg->registerModel<ofxPm::LumaFilterNodeBased>();
-    reg->registerModel<ofxPm::VideoBufferNodeBased>();
-    reg->registerModel<ofxPm::VideoHeaderNodeBased>();
-    reg->registerModel<ofxPm::FeedbackFilterNodeBased>();
-    reg->registerModel<ofxPm::VideoGrabberPS3EyeNodeBased>();
-    reg->registerModel<ofxPm::LooperFilter>();
+    //reg->registerModel<testNode>();
+    reg->registerModel<ofxPm::VideoGrabberNodeBased>("Video");
+    reg->registerModel<ofxPm::VideoRendererNodeBased>("Video");
+    reg->registerModel<ofxPm::VideoRendererWindowNodeBased>("Video");
+    reg->registerModel<ofxPm::LumaFilterNodeBased>("Video");
+    reg->registerModel<ofxPm::VideoBufferNodeBased>("Video");
+    reg->registerModel<ofxPm::VideoHeaderNodeBased>("Video");
+    reg->registerModel<ofxPm::FeedbackFilterNodeBased>("Video");
+    reg->registerModel<ofxPm::VideoGrabberPS3EyeNodeBased>("Video");
+    reg->registerModel<ofxPm::LooperFilter>("Video");
+    reg->registerModel<ofxPm::FrameRateCalculator>("Video");
+    reg->registerModel<ofxPm::MultixFilter>("Video");
     
-    reg->registerModel<ofxPm::MultixFilter>();
-    
+
     container = make_shared<ofxOceanodeContainer>(reg);
     canvas.setContainer(container);
     canvas.setup();

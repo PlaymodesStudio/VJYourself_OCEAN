@@ -22,7 +22,7 @@ void ofApp::setup()
     ofBackground(20,20,20);
     
     auto reg = make_shared<ofxOceanodeNodeRegistry>();
-    
+    auto treg = make_shared<ofxOceanodeTypesRegistry>();
     //reg->registerModel<testNode>();
     reg->registerModel<ofxPm::VideoGrabberNodeBased>("Video");
     reg->registerModel<ofxPm::VideoRendererNodeBased>("Video");
@@ -37,8 +37,11 @@ void ofApp::setup()
     reg->registerModel<ofxPm::FrameRateCalculator>("Video");
     reg->registerModel<ofxPm::MultixFilter>("Video");
     
+    treg->registerType<ofxPm::VideoFrame>();
+    treg->registerType<ofxPm::VideoBufferNodeBased*>();
+    
 
-    container = make_shared<ofxOceanodeContainer>(reg);
+    container = make_shared<ofxOceanodeContainer>(reg, treg);
     canvas.setContainer(container);
     canvas.setup();
     controls = new ofxOceanodeControls(container);

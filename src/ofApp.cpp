@@ -8,9 +8,9 @@
 #include "MultixFilter.h"
 #include "VideoGrabberPS3EyeNodeBased.h"
 #include "LooperFilter.h"
-#include "FrameRateCalculator.h"
+#include "FrameInspector.h"
 #include "VideoTrioRendererNodeBased.h"
-
+#include "EdgeBlendNodeBased.h"
 #include "ofApp.h"
 #include "testNode.h"
 
@@ -34,9 +34,10 @@ void ofApp::setup()
     reg->registerModel<ofxPm::VideoGrabberPS3EyeNodeBased>("Video");
     reg->registerModel<ofxPm::LooperFilter>("Video");
     reg->registerModel<ofxPm::VideoTrioRendererNodeBased>("Video");
-    reg->registerModel<ofxPm::FrameRateCalculator>("Video");
+    reg->registerModel<ofxPm::FrameInspector>("Video");
     reg->registerModel<ofxPm::MultixFilter>("Video");
-    
+    reg->registerModel<ofxPm::EdgeBlendNodeBased>("Video");
+
     treg->registerType<ofxPm::VideoFrame>();
     treg->registerType<ofxPm::VideoBufferNodeBased*>();
     

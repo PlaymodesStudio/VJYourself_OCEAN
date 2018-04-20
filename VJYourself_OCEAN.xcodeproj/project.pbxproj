@@ -54,6 +54,7 @@
 		A927ADF845D4C1CD10987F55 /* VideoSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118E3F678A0E7344AC2E45E6 /* VideoSink.cpp */; };
 		B085DB54208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B085DB53208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp */; };
 		B085DB57208907D40091FE9F /* VideoTrioRendererNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B085DB55208907D40091FE9F /* VideoTrioRendererNodeBased.cpp */; };
+		B09603CA208A3E230044F733 /* EdgeBlendNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */; };
 		B67787D456EEA92A8355BA0B /* FeedbackDelayFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566F93D84191ADF0ADE60DEA /* FeedbackDelayFilterNodeBased.cpp */; };
 		B7559FEE382DBA7FB094D5E7 /* ofxOceanodeNodeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15C9896F6A32FCA280CD4B5 /* ofxOceanodeNodeRegistry.cpp */; };
 		B8C0CE8386649142DCA4F324 /* VideoSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B24CE6BD24558DCC97CEE17 /* VideoSource.cpp */; };
@@ -77,7 +78,7 @@
 		E5CF499F0E2EF093797B399B /* VideoGrabberNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D683F00A9F31F64A99572723 /* VideoGrabberNodeBased.cpp */; };
 		EB46C89CC50261B0B52C624D /* LooperFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D1E775491309450CC23E2 /* LooperFilter.cpp */; };
 		F710929D0EE55E87768FF88A /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 5AD03290B7B965C967A3A717 /* shader.vert */; };
-		F8B31355721C0184A96B7EF5 /* FrameRateCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7B9702B34113B79A0DA99D2 /* FrameRateCalculator.cpp */; };
+		F8B31355721C0184A96B7EF5 /* FrameInspector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7B9702B34113B79A0DA99D2 /* FrameInspector.cpp */; };
 		FA3C841ED8F2881D7CBF052D /* Frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AD82B1E46505DD2DAB1B72E /* Frame.cpp */; };
 		FD0AF370DC74D25D420AEE82 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6CB5CE5F553CB9A9096D6DF /* Buffer.cpp */; };
 		FE7602E65C7BA676951A37FB /* ofxOceanodeCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69F09B1450CB3FF08A87D2FF /* ofxOceanodeCanvas.cpp */; };
@@ -262,7 +263,7 @@
 		A534F08B38B5C43917E2A9E4 /* ofxDatGuiComponent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDatGuiComponent.h; path = ../../../addons/ofxDatGui_PM/src/core/ofxDatGuiComponent.h; sourceTree = SOURCE_ROOT; };
 		A635ED74FA38F1EFA4AD206C /* err.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = err.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/err.h; sourceTree = SOURCE_ROOT; };
 		A7B61DF7F41316374CEEE8CA /* ofxDatGuiTimeGraph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDatGuiTimeGraph.h; path = ../../../addons/ofxDatGui_PM/src/components/ofxDatGuiTimeGraph.h; sourceTree = SOURCE_ROOT; };
-		A7B9702B34113B79A0DA99D2 /* FrameRateCalculator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = FrameRateCalculator.cpp; path = ../../../addons/ofxPlaymodes/src/filters/FrameRateCalculator.cpp; sourceTree = SOURCE_ROOT; };
+		A7B9702B34113B79A0DA99D2 /* FrameInspector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = FrameInspector.cpp; path = ../../../addons/ofxPlaymodes/src/filters/FrameInspector.cpp; sourceTree = SOURCE_ROOT; };
 		A8150F1936B064445E99AF76 /* ofxOceanodeBPMController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOceanodeBPMController.cpp; path = ../../../addons/ofxOceanode/src/Controls/ofxOceanodeBPMController.cpp; sourceTree = SOURCE_ROOT; };
 		A96B8F6D2ECF14F9304EBD6C /* ofxAubioBeat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAubioBeat.cpp; path = ../../../addons/ofxAubio/src/ofxAubioBeat.cpp; sourceTree = SOURCE_ROOT; };
 		A9AA9F290280E04944C1CEEE /* srp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = srp.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/srp.h; sourceTree = SOURCE_ROOT; };
@@ -274,6 +275,8 @@
 		B085DB53208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxOceanodeTypesRegistry.cpp; path = ../../../addons/ofxOceanode/src/Managers/ofxOceanodeTypesRegistry.cpp; sourceTree = "<group>"; };
 		B085DB55208907D40091FE9F /* VideoTrioRendererNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoTrioRendererNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/renderers/VideoTrioRendererNodeBased.cpp; sourceTree = "<group>"; };
 		B085DB56208907D40091FE9F /* VideoTrioRendererNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTrioRendererNodeBased.h; path = ../../../addons/ofxPlaymodes/src/renderers/VideoTrioRendererNodeBased.h; sourceTree = "<group>"; };
+		B09603C8208A3E230044F733 /* EdgeBlendNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgeBlendNodeBased.h; path = ../../../addons/ofxPlaymodes/src/filters/EdgeBlendNodeBased.h; sourceTree = "<group>"; };
+		B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EdgeBlendNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/filters/EdgeBlendNodeBased.cpp; sourceTree = "<group>"; };
 		B0DB4F31D285F52A28EAE204 /* VideoGrabberDeckLink.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoGrabberDeckLink.h; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberDeckLink.h; sourceTree = SOURCE_ROOT; };
 		B11DB438E2A6EBD360F8BA50 /* ofxDatGuiFRM.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDatGuiFRM.h; path = ../../../addons/ofxDatGui_PM/src/components/ofxDatGuiFRM.h; sourceTree = SOURCE_ROOT; };
 		B1CC96657896D2F948104F3D /* seed.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = seed.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/seed.h; sourceTree = SOURCE_ROOT; };
@@ -347,7 +350,7 @@
 		F24887AB1BADDDBB829D94E1 /* testNode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = testNode.h; path = src/testNode.h; sourceTree = SOURCE_ROOT; };
 		F2F54FB45E5F06CAD24E5506 /* Frame.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Frame.h; path = ../../../addons/ofxPlaymodes/src/frames/Frame.h; sourceTree = SOURCE_ROOT; };
 		F44449692EA3A4B7FBABCF29 /* baseOscillator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = baseOscillator.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/Base/baseOscillator.cpp; sourceTree = SOURCE_ROOT; };
-		F55E6EE43DA3CAB461211F31 /* FrameRateCalculator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = FrameRateCalculator.h; path = ../../../addons/ofxPlaymodes/src/filters/FrameRateCalculator.h; sourceTree = SOURCE_ROOT; };
+		F55E6EE43DA3CAB461211F31 /* FrameInspector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = FrameInspector.h; path = ../../../addons/ofxPlaymodes/src/filters/FrameInspector.h; sourceTree = SOURCE_ROOT; };
 		FC282E3C23B1B451197F8EB2 /* MultixFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MultixFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/MultixFilter.h; sourceTree = SOURCE_ROOT; };
 		FC8E873E04A65764668D30AB /* ofxOceanodeContainer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOceanodeContainer.h; path = ../../../addons/ofxOceanode/src/Managers/ofxOceanodeContainer.h; sourceTree = SOURCE_ROOT; };
 		FDB04DA12ABAFBA5FFE217C9 /* opensslconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = opensslconf.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/opensslconf.h; sourceTree = SOURCE_ROOT; };
@@ -471,12 +474,14 @@
 		418E56FFF105CF2AAC8FE2BC /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */,
+				B09603C8208A3E230044F733 /* EdgeBlendNodeBased.h */,
 				566F93D84191ADF0ADE60DEA /* FeedbackDelayFilterNodeBased.cpp */,
 				681A0726244E5DAE9A4EF5D2 /* FeedbackDelayFilterNodeBased.h */,
 				C68D9F0D64056BB6E3656039 /* FeedbackFilterNodeBased.cpp */,
 				2C192DA39874925057ECE875 /* FeedbackFilterNodeBased.h */,
-				A7B9702B34113B79A0DA99D2 /* FrameRateCalculator.cpp */,
-				F55E6EE43DA3CAB461211F31 /* FrameRateCalculator.h */,
+				A7B9702B34113B79A0DA99D2 /* FrameInspector.cpp */,
+				F55E6EE43DA3CAB461211F31 /* FrameInspector.h */,
 				AB414B88E9A4FD9EAE6FF729 /* GradientEdgesFilter.cpp */,
 				2A2DAA29C98B66B62F831DE7 /* GradientEdgesFilter.h */,
 				2D6D1E775491309450CC23E2 /* LooperFilter.cpp */,
@@ -1094,6 +1099,7 @@
 				479DCA850DD8BB469A777AD4 /* ofxAubioBeat.cpp in Sources */,
 				C60077973A257D8F44947E2E /* ofxAubioBlock.cpp in Sources */,
 				67383740F5CC47ED5F955A76 /* ofxAubioMelBands.cpp in Sources */,
+				B09603CA208A3E230044F733 /* EdgeBlendNodeBased.cpp in Sources */,
 				9C7B8B4D99CDFC508E76CC3A /* ofxAubioOnset.cpp in Sources */,
 				101D2DB773940813A5C898CD /* ofxAubioPitch.cpp in Sources */,
 				4A277DA746402C76CE307770 /* ofxDatGuiComponent.cpp in Sources */,
@@ -1127,7 +1133,7 @@
 				47ACD9F536CFFF069585FB0B /* VideoBufferNodeBased.cpp in Sources */,
 				B67787D456EEA92A8355BA0B /* FeedbackDelayFilterNodeBased.cpp in Sources */,
 				A4E5EDCCB2C332C2F3F54E41 /* FeedbackFilterNodeBased.cpp in Sources */,
-				F8B31355721C0184A96B7EF5 /* FrameRateCalculator.cpp in Sources */,
+				F8B31355721C0184A96B7EF5 /* FrameInspector.cpp in Sources */,
 				DBBA89D1063C3008710A8DC4 /* GradientEdgesFilter.cpp in Sources */,
 				EB46C89CC50261B0B52C624D /* LooperFilter.cpp in Sources */,
 				8833E572B44C717EE387E709 /* LumaFilterNodeBased.cpp in Sources */,

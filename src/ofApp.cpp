@@ -12,7 +12,6 @@
 #include "VideoTrioRendererNodeBased.h"
 
 #include "ofApp.h"
-#include "testNode.h"
 
 //--------------------------------------------------------------
 void ofApp::setup()
@@ -23,7 +22,6 @@ void ofApp::setup()
     
     auto reg = make_shared<ofxOceanodeNodeRegistry>();
     auto treg = make_shared<ofxOceanodeTypesRegistry>();
-    //reg->registerModel<testNode>();
     reg->registerModel<ofxPm::VideoGrabberNodeBased>("Video");
     reg->registerModel<ofxPm::VideoRendererNodeBased>("Video");
     reg->registerModel<ofxPm::VideoRendererWindowNodeBased>("Video");

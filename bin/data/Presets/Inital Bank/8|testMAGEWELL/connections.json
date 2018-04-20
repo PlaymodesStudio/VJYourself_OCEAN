@@ -1,0 +1,9 @@
+{
+    "Video_Grabber_1": {
+        "Frame Output": {
+            "Video_Renderer_1": {
+                "Frame In": null
+            }
+        }
+    }
+}

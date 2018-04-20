@@ -1,0 +1,12 @@
+{
+    "Video_Grabber_1": {
+        "Frame Output": {
+            "FPS_Calculator_1": {
+                "Frame Input": null
+            },
+            "Video_Renderer_1": {
+                "Frame In": null
+            }
+        }
+    }
+}

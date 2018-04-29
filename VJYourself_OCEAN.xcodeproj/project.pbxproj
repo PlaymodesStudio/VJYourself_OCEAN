@@ -48,6 +48,8 @@
 		9BF3DD06DF9599EBD16E452D /* lumakey.vert in Sources */ = {isa = PBXBuildFile; fileRef = B659E984DF16491249E2899E /* lumakey.vert */; };
 		9C7B8B4D99CDFC508E76CC3A /* ofxAubioOnset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A90A4B17BBB4CB627CA22C4 /* ofxAubioOnset.cpp */; };
 		9E1B6727F212BD31C7634BBF /* VideoRendererWindowNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47A2AC284AC268CA294AD1BE /* VideoRendererWindowNodeBased.cpp */; };
+		9F6F540B2090DA4F0040FFD8 /* ofxOceanodeNodeModelLocalPreset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F54092090DA4F0040FFD8 /* ofxOceanodeNodeModelLocalPreset.cpp */; };
+		9F91BE8B20923BED0039B7F0 /* localPresetController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F91BE8A20923BED0039B7F0 /* localPresetController.cpp */; };
 		A1F2F23D06883394CB5EABBD /* VideoRendererNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 861C05BAAE474D19F828994C /* VideoRendererNodeBased.cpp */; };
 		A4E5EDCCB2C332C2F3F54E41 /* FeedbackFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C68D9F0D64056BB6E3656039 /* FeedbackFilterNodeBased.cpp */; };
 		A927ADF845D4C1CD10987F55 /* VideoSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118E3F678A0E7344AC2E45E6 /* VideoSink.cpp */; };
@@ -256,6 +258,10 @@
 		9E034FA57FE251AC33904E82 /* ofxDatGuiThemes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDatGuiThemes.h; path = ../../../addons/ofxDatGui_PM/src/themes/ofxDatGuiThemes.h; sourceTree = SOURCE_ROOT; };
 		9E41B5C932654328664C3743 /* ocsp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ocsp.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/ocsp.h; sourceTree = SOURCE_ROOT; };
 		9E67C420F0790C0E12C99190 /* ts.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ts.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/ts.h; sourceTree = SOURCE_ROOT; };
+		9F6F54092090DA4F0040FFD8 /* ofxOceanodeNodeModelLocalPreset.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofxOceanodeNodeModelLocalPreset.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Base_Nodes/ofxOceanodeNodeModelLocalPreset.cpp; sourceTree = "<group>"; };
+		9F6F540A2090DA4F0040FFD8 /* ofxOceanodeNodeModelLocalPreset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofxOceanodeNodeModelLocalPreset.h; path = ../../../addons/ofxOceanode/src/Nodes/Base_Nodes/ofxOceanodeNodeModelLocalPreset.h; sourceTree = "<group>"; };
+		9F91BE8920923BEC0039B7F0 /* localPresetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = localPresetController.h; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/Controllers/localPresetController.h; sourceTree = "<group>"; };
+		9F91BE8A20923BED0039B7F0 /* localPresetController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = localPresetController.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/Controllers/localPresetController.cpp; sourceTree = "<group>"; };
 		A13853A1B21F20177F44EE37 /* ofxDatGuiLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDatGuiLabel.h; path = ../../../addons/ofxDatGui_PM/src/components/ofxDatGuiLabel.h; sourceTree = SOURCE_ROOT; };
 		A1FCA83B0C8E375C7A4406E5 /* VideoRendererNodeBased.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoRendererNodeBased.h; path = ../../../addons/ofxPlaymodes/src/renderers/VideoRendererNodeBased.h; sourceTree = SOURCE_ROOT; };
 		A403D3D25D08FC7AF3B871D4 /* ofxSmartFont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSmartFont.cpp; path = ../../../addons/ofxDatGui_PM/src/libs/ofxSmartFont/ofxSmartFont.cpp; sourceTree = SOURCE_ROOT; };
@@ -417,6 +423,8 @@
 			children = (
 				03E42CA654A61594B6D8167F /* ofxOceanodeNodeModelExternalWindow.cpp */,
 				16D50E04676F5AF6D586DD9B /* ofxOceanodeNodeModelExternalWindow.h */,
+				9F6F54092090DA4F0040FFD8 /* ofxOceanodeNodeModelLocalPreset.cpp */,
+				9F6F540A2090DA4F0040FFD8 /* ofxOceanodeNodeModelLocalPreset.h */,
 			);
 			name = Base_Nodes;
 			sourceTree = "<group>";
@@ -509,6 +517,7 @@
 		4A0C0B233C38AF6788F3CE7D /* Default_Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				9F91BE8620923BCD0039B7F0 /* Controllers */,
 				7122898CC63A863AD1DC1535 /* Base */,
 				60A061F8C47B5624AE6C450E /* defaultNodes.h */,
 				86C08C13FA71904D23256B02 /* Generators */,
@@ -771,6 +780,15 @@
 				86F00AF8B1543076FA133A82 /* ofxOceanode.h */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		9F91BE8620923BCD0039B7F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F91BE8A20923BED0039B7F0 /* localPresetController.cpp */,
+				9F91BE8920923BEC0039B7F0 /* localPresetController.h */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		A85F662AA1D93BE39706B459 /* ps3eye */ = {
@@ -1095,6 +1113,7 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				9F6F540B2090DA4F0040FFD8 /* ofxOceanodeNodeModelLocalPreset.cpp in Sources */,
 				479DCA850DD8BB469A777AD4 /* ofxAubioBeat.cpp in Sources */,
 				C60077973A257D8F44947E2E /* ofxAubioBlock.cpp in Sources */,
 				67383740F5CC47ED5F955A76 /* ofxAubioMelBands.cpp in Sources */,
@@ -1156,6 +1175,7 @@
 				107EBF62B86DF9CD74025894 /* feedbackDelay.frag in Sources */,
 				56DF3AA7BD7419202A9FCC03 /* feedbackDelay.vert in Sources */,
 				BF80FA195CB64C07ED2D96F1 /* gradient.frag in Sources */,
+				9F91BE8B20923BED0039B7F0 /* localPresetController.cpp in Sources */,
 				CE1D4D25DE658F824A822CEA /* gradient.vert in Sources */,
 				6330343126BF87409BC2AE04 /* lumakey.frag in Sources */,
 				9BF3DD06DF9599EBD16E452D /* lumakey.vert in Sources */,

@@ -47,7 +47,7 @@ void ofApp::setup()
     container = make_shared<ofxOceanodeContainer>(reg, treg);
     canvas.setContainer(container);
     canvas.setup();
-    controls = new ofxOceanodeControls(container);
+    controls = make_unique<ofxOceanodeControls>(container);
     
 }
 

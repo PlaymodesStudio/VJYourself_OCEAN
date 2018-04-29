@@ -11,6 +11,8 @@
 #include "FrameInspector.h"
 #include "VideoTrioRendererNodeBased.h"
 #include "EdgeBlendNodeBased.h"
+#include "kaleidoscopeNodeBased.h"
+
 #include "ofApp.h"
 
 //--------------------------------------------------------------
@@ -35,7 +37,9 @@ void ofApp::setup()
     reg->registerModel<ofxPm::FrameInspector>("Video");
     reg->registerModel<ofxPm::MultixFilter>("Video");
     reg->registerModel<ofxPm::EdgeBlendNodeBased>("Video");
+    reg->registerModel<ofxPm::kaleidoscopeNodeBased>("Video");
 
+    
     treg->registerType<ofxPm::VideoFrame>();
     treg->registerType<ofxPm::VideoBufferNodeBased*>();
     

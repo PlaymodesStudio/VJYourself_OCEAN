@@ -54,6 +54,7 @@
 		B085DB54208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B085DB53208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp */; };
 		B085DB57208907D40091FE9F /* VideoTrioRendererNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B085DB55208907D40091FE9F /* VideoTrioRendererNodeBased.cpp */; };
 		B09603CA208A3E230044F733 /* EdgeBlendNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */; };
+		B0C694D6208AADF80085401D /* KaleidoscopeNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */; };
 		B67787D456EEA92A8355BA0B /* FeedbackDelayFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566F93D84191ADF0ADE60DEA /* FeedbackDelayFilterNodeBased.cpp */; };
 		B7559FEE382DBA7FB094D5E7 /* ofxOceanodeNodeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15C9896F6A32FCA280CD4B5 /* ofxOceanodeNodeRegistry.cpp */; };
 		B8C0CE8386649142DCA4F324 /* VideoSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B24CE6BD24558DCC97CEE17 /* VideoSource.cpp */; };
@@ -275,6 +276,8 @@
 		B085DB56208907D40091FE9F /* VideoTrioRendererNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTrioRendererNodeBased.h; path = ../../../addons/ofxPlaymodes/src/renderers/VideoTrioRendererNodeBased.h; sourceTree = "<group>"; };
 		B09603C8208A3E230044F733 /* EdgeBlendNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgeBlendNodeBased.h; path = ../../../addons/ofxPlaymodes/src/filters/EdgeBlendNodeBased.h; sourceTree = "<group>"; };
 		B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EdgeBlendNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/filters/EdgeBlendNodeBased.cpp; sourceTree = "<group>"; };
+		B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KaleidoscopeNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/filters/KaleidoscopeNodeBased.cpp; sourceTree = "<group>"; };
+		B0C694D5208AADF80085401D /* KaleidoscopeNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaleidoscopeNodeBased.h; path = ../../../addons/ofxPlaymodes/src/filters/KaleidoscopeNodeBased.h; sourceTree = "<group>"; };
 		B0DB4F31D285F52A28EAE204 /* VideoGrabberDeckLink.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoGrabberDeckLink.h; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberDeckLink.h; sourceTree = SOURCE_ROOT; };
 		B11DB438E2A6EBD360F8BA50 /* ofxDatGuiFRM.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDatGuiFRM.h; path = ../../../addons/ofxDatGui_PM/src/components/ofxDatGuiFRM.h; sourceTree = SOURCE_ROOT; };
 		B1CC96657896D2F948104F3D /* seed.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = seed.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/seed.h; sourceTree = SOURCE_ROOT; };
@@ -471,6 +474,8 @@
 		418E56FFF105CF2AAC8FE2BC /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */,
+				B0C694D5208AADF80085401D /* KaleidoscopeNodeBased.h */,
 				B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */,
 				B09603C8208A3E230044F733 /* EdgeBlendNodeBased.h */,
 				566F93D84191ADF0ADE60DEA /* FeedbackDelayFilterNodeBased.cpp */,
@@ -1106,6 +1111,7 @@
 				7B8EE5B7F57088CD23B7934D /* ofxOceanodeControls.cpp in Sources */,
 				026CF24E227F5DFC3C392E27 /* ofxOceanodePresetsController.cpp in Sources */,
 				FE7602E65C7BA676951A37FB /* ofxOceanodeCanvas.cpp in Sources */,
+				B0C694D6208AADF80085401D /* KaleidoscopeNodeBased.cpp in Sources */,
 				5769B6A6D79188D3D351933E /* ofxOceanodeContainer.cpp in Sources */,
 				B7559FEE382DBA7FB094D5E7 /* ofxOceanodeNodeRegistry.cpp in Sources */,
 				7CC1A4D669C6C1B3786CD384 /* ofxOceanodeNodeModelExternalWindow.cpp in Sources */,

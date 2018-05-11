@@ -53,6 +53,7 @@
 		A1F2F23D06883394CB5EABBD /* VideoRendererNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 861C05BAAE474D19F828994C /* VideoRendererNodeBased.cpp */; };
 		A4E5EDCCB2C332C2F3F54E41 /* FeedbackFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C68D9F0D64056BB6E3656039 /* FeedbackFilterNodeBased.cpp */; };
 		A927ADF845D4C1CD10987F55 /* VideoSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118E3F678A0E7344AC2E45E6 /* VideoSink.cpp */; };
+		B028C85F209618B6002C6222 /* RepeaterFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B028C85D209618B5002C6222 /* RepeaterFilter.cpp */; };
 		B085DB54208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B085DB53208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp */; };
 		B085DB57208907D40091FE9F /* VideoTrioRendererNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B085DB55208907D40091FE9F /* VideoTrioRendererNodeBased.cpp */; };
 		B09603CA208A3E230044F733 /* EdgeBlendNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */; };
@@ -275,6 +276,8 @@
 		AA136346D730CE2FC0EC85CD /* e_os2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = e_os2.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/e_os2.h; sourceTree = SOURCE_ROOT; };
 		AB414B88E9A4FD9EAE6FF729 /* GradientEdgesFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = GradientEdgesFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/GradientEdgesFilter.cpp; sourceTree = SOURCE_ROOT; };
 		AF53C1FCB4DC2DA249C71CE4 /* asn1t.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = asn1t.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/asn1t.h; sourceTree = SOURCE_ROOT; };
+		B028C85D209618B5002C6222 /* RepeaterFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RepeaterFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/RepeaterFilter.cpp; sourceTree = "<group>"; };
+		B028C85E209618B6002C6222 /* RepeaterFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RepeaterFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/RepeaterFilter.h; sourceTree = "<group>"; };
 		B070CD08427D967C9CE7C1CA /* VideoGrabberPS3EyeNodeBased.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = VideoGrabberPS3EyeNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberPS3EyeNodeBased.cpp; sourceTree = SOURCE_ROOT; };
 		B085DB52208906E40091FE9F /* ofxOceanodeTypesRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOceanodeTypesRegistry.h; path = ../../../addons/ofxOceanode/src/Managers/ofxOceanodeTypesRegistry.h; sourceTree = "<group>"; };
 		B085DB53208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxOceanodeTypesRegistry.cpp; path = ../../../addons/ofxOceanode/src/Managers/ofxOceanodeTypesRegistry.cpp; sourceTree = "<group>"; };
@@ -482,6 +485,8 @@
 		418E56FFF105CF2AAC8FE2BC /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				B028C85D209618B5002C6222 /* RepeaterFilter.cpp */,
+				B028C85E209618B6002C6222 /* RepeaterFilter.h */,
 				B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */,
 				B0C694D5208AADF80085401D /* KaleidoscopeNodeBased.h */,
 				B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */,
@@ -1164,6 +1169,7 @@
 				8065EC35B6224B27D70B6ED0 /* VideoGrabberDeckLinkNodeBased.cpp in Sources */,
 				B085DB54208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp in Sources */,
 				E5CF499F0E2EF093797B399B /* VideoGrabberNodeBased.cpp in Sources */,
+				B028C85F209618B6002C6222 /* RepeaterFilter.cpp in Sources */,
 				37CCE63CAF6DD42CEC609538 /* VideoGrabberPS3EyeNodeBased.cpp in Sources */,
 				8E4FD18C9C10D906A6396983 /* VideoHeaderNodeBased.cpp in Sources */,
 				A927ADF845D4C1CD10987F55 /* VideoSink.cpp in Sources */,

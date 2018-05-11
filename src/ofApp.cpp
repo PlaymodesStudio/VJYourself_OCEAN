@@ -12,6 +12,7 @@
 #include "VideoTrioRendererNodeBased.h"
 #include "EdgeBlendNodeBased.h"
 #include "kaleidoscopeNodeBased.h"
+#include "RepeaterFilter.h"
 
 #include "ofApp.h"
 
@@ -19,7 +20,7 @@
 void ofApp::setup()
 {
     ofDisableArbTex();
-    ofSetVerticalSync(false);
+    ofSetVerticalSync(true);
     ofBackground(20,20,20);
     
     auto reg = make_shared<ofxOceanodeNodeRegistry>();
@@ -32,7 +33,7 @@ void ofApp::setup()
     reg->registerModel<ofxPm::VideoHeaderNodeBased>("Video");
     reg->registerModel<ofxPm::FeedbackFilterNodeBased>("Video");
     reg->registerModel<ofxPm::VideoGrabberPS3EyeNodeBased>("Video");
-    reg->registerModel<ofxPm::LooperFilter>("Video");
+    reg->registerModel<ofxPm::RepeaterFilter>("Video");
     reg->registerModel<ofxPm::VideoTrioRendererNodeBased>("Video");
     reg->registerModel<ofxPm::FrameInspector>("Video");
     reg->registerModel<ofxPm::MultixFilter>("Video");

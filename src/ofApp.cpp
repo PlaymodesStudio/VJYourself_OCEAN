@@ -25,20 +25,21 @@ void ofApp::setup()
     
     auto reg = make_shared<ofxOceanodeNodeRegistry>();
     auto treg = make_shared<ofxOceanodeTypesRegistry>();
-    reg->registerModel<ofxPm::VideoGrabberNodeBased>("Video");
-    reg->registerModel<ofxPm::VideoRendererNodeBased>("Video");
-    reg->registerModel<ofxPm::VideoRendererWindowNodeBased>("Video");
-    reg->registerModel<ofxPm::LumaFilterNodeBased>("Video");
-    reg->registerModel<ofxPm::VideoBufferNodeBased>("Video");
-    reg->registerModel<ofxPm::VideoHeaderNodeBased>("Video");
-    reg->registerModel<ofxPm::FeedbackFilterNodeBased>("Video");
-    reg->registerModel<ofxPm::VideoGrabberPS3EyeNodeBased>("Video");
-    reg->registerModel<ofxPm::RepeaterFilter>("Video");
-    reg->registerModel<ofxPm::VideoTrioRendererNodeBased>("Video");
-    reg->registerModel<ofxPm::FrameInspector>("Video");
-    reg->registerModel<ofxPm::MultixFilter>("Video");
-    reg->registerModel<ofxPm::EdgeBlendNodeBased>("Video");
-    reg->registerModel<ofxPm::kaleidoscopeNodeBased>("Video");
+    reg->registerModel<ofxPm::VideoGrabberNodeBased>("Video/Grabber");
+    reg->registerModel<ofxPm::VideoRendererNodeBased>("Video/Renderer");
+    reg->registerModel<ofxPm::VideoRendererWindowNodeBased>("Video/Renderer");
+    reg->registerModel<ofxPm::LumaFilterNodeBased>("Video/Filter");
+    reg->registerModel<ofxPm::VideoBufferNodeBased>("Video/Basic");
+    reg->registerModel<ofxPm::VideoHeaderNodeBased>("Video/Basic");
+    reg->registerModel<ofxPm::FeedbackFilterNodeBased>("Video/Filter");
+    reg->registerModel<ofxPm::VideoGrabberPS3EyeNodeBased>("Video/Grabber");
+    reg->registerModel<ofxPm::RepeaterFilter>("Video/Filter");
+    reg->registerModel<ofxPm::LooperFilter>("Video/Filter");
+    reg->registerModel<ofxPm::VideoTrioRendererNodeBased>("Video/Renderer");
+    reg->registerModel<ofxPm::FrameInspector>("Video/Basic");
+    reg->registerModel<ofxPm::MultixFilter>("Video/Filter");
+    reg->registerModel<ofxPm::EdgeBlendNodeBased>("Video/Filter");
+    reg->registerModel<ofxPm::kaleidoscopeNodeBased>("Video/Filter");
 
     
     treg->registerType<ofxPm::VideoFrame>();

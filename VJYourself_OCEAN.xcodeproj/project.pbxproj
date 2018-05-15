@@ -485,6 +485,8 @@
 		418E56FFF105CF2AAC8FE2BC /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				2D6D1E775491309450CC23E2 /* LooperFilter.cpp */,
+				19E54E17BBDCAE2D81DD48D1 /* LooperFilter.h */,
 				B028C85D209618B5002C6222 /* RepeaterFilter.cpp */,
 				B028C85E209618B6002C6222 /* RepeaterFilter.h */,
 				B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */,
@@ -499,8 +501,6 @@
 				F55E6EE43DA3CAB461211F31 /* FrameInspector.h */,
 				AB414B88E9A4FD9EAE6FF729 /* GradientEdgesFilter.cpp */,
 				2A2DAA29C98B66B62F831DE7 /* GradientEdgesFilter.h */,
-				2D6D1E775491309450CC23E2 /* LooperFilter.cpp */,
-				19E54E17BBDCAE2D81DD48D1 /* LooperFilter.h */,
 				0706FD38956033BD511B47CB /* LumaFilterNodeBased.cpp */,
 				B616FD249F7B7D94EDF3950E /* LumaFilterNodeBased.h */,
 				5F77784E212FB33321AA99A1 /* MultixFilter.cpp */,

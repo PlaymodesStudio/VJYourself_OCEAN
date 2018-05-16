@@ -1,0 +1,3 @@
+[submodule "src/ofxOceanode_modules-scripting"]
+	path = src/ofxOceanode_modules-scripting
+	url = https://eloimaduell@github.com/PlaymodesStudio/ofxOceanode_modules-scripting.git

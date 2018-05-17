@@ -13,7 +13,8 @@
 #include "EdgeBlendNodeBased.h"
 #include "kaleidoscopeNodeBased.h"
 #include "RepeaterFilter.h"
-
+#include "scriptModule.h"
+#include "GatorFilter.h"
 #include "ofApp.h"
 
 //--------------------------------------------------------------
@@ -40,7 +41,8 @@ void ofApp::setup()
     reg->registerModel<ofxPm::MultixFilter>("Video/Filter");
     reg->registerModel<ofxPm::EdgeBlendNodeBased>("Video/Filter");
     reg->registerModel<ofxPm::kaleidoscopeNodeBased>("Video/Filter");
-
+    reg->registerModel<ofxPm::GatorFilter>("Video/Filter");
+    reg->registerModel<scriptModule>("Scripting");
     
     treg->registerType<ofxPm::VideoFrame>();
     treg->registerType<ofxPm::VideoBufferNodeBased*>();

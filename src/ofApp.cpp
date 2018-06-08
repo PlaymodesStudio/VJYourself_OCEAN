@@ -15,6 +15,11 @@
 #include "RepeaterFilter.h"
 #include "scriptModule.h"
 #include "GatorFilter.h"
+#include "VideoPsLayer.h"
+#include "VideoMixer2Ch.h"
+#include "VideoFileGrabber.h"
+#include "ColorCorrectFilter.h"
+
 #include "ofApp.h"
 
 //--------------------------------------------------------------
@@ -42,8 +47,12 @@ void ofApp::setup()
     reg->registerModel<ofxPm::EdgeBlendNodeBased>("Video/Filter");
     reg->registerModel<ofxPm::kaleidoscopeNodeBased>("Video/Filter");
     reg->registerModel<ofxPm::GatorFilter>("Video/Filter");
+    reg->registerModel<ofxPm::VideoPsLayer>("Video/Mixer");
+    reg->registerModel<ofxPm::VideoMixer2Ch>("Video/Mixer");
+    reg->registerModel<ofxPm::VideoFileGrabber>("Video/Grabber");
+    reg->registerModel<ofxPm::ColorCorrectFilter>("Video/Filter");
     reg->registerModel<scriptModule>("Scripting");
-    
+
     treg->registerType<ofxPm::VideoFrame>();
     treg->registerType<ofxPm::VideoBufferNodeBased*>();
     

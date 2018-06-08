@@ -54,12 +54,16 @@
 		A4E5EDCCB2C332C2F3F54E41 /* FeedbackFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C68D9F0D64056BB6E3656039 /* FeedbackFilterNodeBased.cpp */; };
 		A927ADF845D4C1CD10987F55 /* VideoSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118E3F678A0E7344AC2E45E6 /* VideoSink.cpp */; };
 		B028C85F209618B6002C6222 /* RepeaterFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B028C85D209618B5002C6222 /* RepeaterFilter.cpp */; };
+		B02CA50C20B3853600DC97D1 /* VideoFileGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B02CA50B20B3853600DC97D1 /* VideoFileGrabber.cpp */; };
+		B0770B4C20ADE6EE00A995E7 /* VideoPsLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0770B4B20ADE6EE00A995E7 /* VideoPsLayer.cpp */; };
 		B082F86920AC5BF100474F58 /* scriptModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B082F86720AC5BF100474F58 /* scriptModule.cpp */; };
 		B082F86E20ACA89300474F58 /* GatorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B082F86D20ACA89300474F58 /* GatorFilter.cpp */; };
 		B085DB54208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B085DB53208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp */; };
 		B085DB57208907D40091FE9F /* VideoTrioRendererNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B085DB55208907D40091FE9F /* VideoTrioRendererNodeBased.cpp */; };
+		B091221220AEC7FF00D63FDA /* VideoMixer2Ch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B091221120AEC7FF00D63FDA /* VideoMixer2Ch.cpp */; };
 		B09603CA208A3E230044F733 /* EdgeBlendNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */; };
 		B0C694D6208AADF80085401D /* KaleidoscopeNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */; };
+		B0F13C8520C1D9010053AEE3 /* ColorCorrectFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F13C8320C1D9010053AEE3 /* ColorCorrectFilter.cpp */; };
 		B67787D456EEA92A8355BA0B /* FeedbackDelayFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566F93D84191ADF0ADE60DEA /* FeedbackDelayFilterNodeBased.cpp */; };
 		B7559FEE382DBA7FB094D5E7 /* ofxOceanodeNodeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15C9896F6A32FCA280CD4B5 /* ofxOceanodeNodeRegistry.cpp */; };
 		B8C0CE8386649142DCA4F324 /* VideoSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B24CE6BD24558DCC97CEE17 /* VideoSource.cpp */; };
@@ -280,7 +284,12 @@
 		AF53C1FCB4DC2DA249C71CE4 /* asn1t.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = asn1t.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/asn1t.h; sourceTree = SOURCE_ROOT; };
 		B028C85D209618B5002C6222 /* RepeaterFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RepeaterFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/RepeaterFilter.cpp; sourceTree = "<group>"; };
 		B028C85E209618B6002C6222 /* RepeaterFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RepeaterFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/RepeaterFilter.h; sourceTree = "<group>"; };
+		B02CA50A20B3853500DC97D1 /* VideoFileGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoFileGrabber.h; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoFileGrabber.h; sourceTree = "<group>"; };
+		B02CA50B20B3853600DC97D1 /* VideoFileGrabber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoFileGrabber.cpp; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoFileGrabber.cpp; sourceTree = "<group>"; };
 		B070CD08427D967C9CE7C1CA /* VideoGrabberPS3EyeNodeBased.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = VideoGrabberPS3EyeNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberPS3EyeNodeBased.cpp; sourceTree = SOURCE_ROOT; };
+		B0770B4A20ADE6ED00A995E7 /* VideoPsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoPsLayer.h; path = ../../../addons/ofxPlaymodes/src/filters/VideoPsLayer.h; sourceTree = "<group>"; };
+		B0770B4B20ADE6EE00A995E7 /* VideoPsLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoPsLayer.cpp; path = ../../../addons/ofxPlaymodes/src/filters/VideoPsLayer.cpp; sourceTree = "<group>"; };
+		B0770B4E20ADE73C00A995E7 /* ofxPSBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPSBlend.h; sourceTree = "<group>"; };
 		B082F83720AC5BF100474F58 /* chaiscript.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chaiscript.hpp; sourceTree = "<group>"; };
 		B082F83820AC5BF100474F58 /* chaiscript_basic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chaiscript_basic.hpp; sourceTree = "<group>"; };
 		B082F83920AC5BF100474F58 /* chaiscript_defines.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chaiscript_defines.hpp; sourceTree = "<group>"; };
@@ -335,11 +344,15 @@
 		B085DB53208906E50091FE9F /* ofxOceanodeTypesRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxOceanodeTypesRegistry.cpp; path = ../../../addons/ofxOceanode/src/Managers/ofxOceanodeTypesRegistry.cpp; sourceTree = "<group>"; };
 		B085DB55208907D40091FE9F /* VideoTrioRendererNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoTrioRendererNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/renderers/VideoTrioRendererNodeBased.cpp; sourceTree = "<group>"; };
 		B085DB56208907D40091FE9F /* VideoTrioRendererNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTrioRendererNodeBased.h; path = ../../../addons/ofxPlaymodes/src/renderers/VideoTrioRendererNodeBased.h; sourceTree = "<group>"; };
+		B091221020AEC7FF00D63FDA /* VideoMixer2Ch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoMixer2Ch.h; path = ../../../addons/ofxPlaymodes/src/filters/VideoMixer2Ch.h; sourceTree = "<group>"; };
+		B091221120AEC7FF00D63FDA /* VideoMixer2Ch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoMixer2Ch.cpp; path = ../../../addons/ofxPlaymodes/src/filters/VideoMixer2Ch.cpp; sourceTree = "<group>"; };
 		B09603C8208A3E230044F733 /* EdgeBlendNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgeBlendNodeBased.h; path = ../../../addons/ofxPlaymodes/src/filters/EdgeBlendNodeBased.h; sourceTree = "<group>"; };
 		B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EdgeBlendNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/filters/EdgeBlendNodeBased.cpp; sourceTree = "<group>"; };
 		B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KaleidoscopeNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/filters/KaleidoscopeNodeBased.cpp; sourceTree = "<group>"; };
 		B0C694D5208AADF80085401D /* KaleidoscopeNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaleidoscopeNodeBased.h; path = ../../../addons/ofxPlaymodes/src/filters/KaleidoscopeNodeBased.h; sourceTree = "<group>"; };
 		B0DB4F31D285F52A28EAE204 /* VideoGrabberDeckLink.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoGrabberDeckLink.h; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberDeckLink.h; sourceTree = SOURCE_ROOT; };
+		B0F13C8320C1D9010053AEE3 /* ColorCorrectFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ColorCorrectFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/ColorCorrectFilter.cpp; sourceTree = "<group>"; };
+		B0F13C8420C1D9010053AEE3 /* ColorCorrectFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorCorrectFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/ColorCorrectFilter.h; sourceTree = "<group>"; };
 		B11DB438E2A6EBD360F8BA50 /* ofxDatGuiFRM.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDatGuiFRM.h; path = ../../../addons/ofxDatGui_PM/src/components/ofxDatGuiFRM.h; sourceTree = SOURCE_ROOT; };
 		B1CC96657896D2F948104F3D /* seed.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = seed.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/seed.h; sourceTree = SOURCE_ROOT; };
 		B217C7439A059C95AF956C87 /* VideoSink.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoSink.h; path = ../../../addons/ofxPlaymodes/src/pipeline/video/VideoSink.h; sourceTree = SOURCE_ROOT; };
@@ -537,6 +550,12 @@
 		418E56FFF105CF2AAC8FE2BC /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				B0F13C8320C1D9010053AEE3 /* ColorCorrectFilter.cpp */,
+				B0F13C8420C1D9010053AEE3 /* ColorCorrectFilter.h */,
+				B091221120AEC7FF00D63FDA /* VideoMixer2Ch.cpp */,
+				B091221020AEC7FF00D63FDA /* VideoMixer2Ch.h */,
+				B0770B4B20ADE6EE00A995E7 /* VideoPsLayer.cpp */,
+				B0770B4A20ADE6ED00A995E7 /* VideoPsLayer.h */,
 				B082F86D20ACA89300474F58 /* GatorFilter.cpp */,
 				B082F86C20ACA89300474F58 /* GatorFilter.h */,
 				2D6D1E775491309450CC23E2 /* LooperFilter.cpp */,
@@ -588,6 +607,7 @@
 		4CEE20CACA6A2D953F81B261 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				B0770B4D20ADE73C00A995E7 /* ofxPSBlend */,
 				A85F662AA1D93BE39706B459 /* ps3eye */,
 			);
 			name = libs;
@@ -761,6 +781,8 @@
 		77D11DDB1837FF4F29D2AAF9 /* grabbers */ = {
 			isa = PBXGroup;
 			children = (
+				B02CA50B20B3853600DC97D1 /* VideoFileGrabber.cpp */,
+				B02CA50A20B3853500DC97D1 /* VideoFileGrabber.h */,
 				46C75A77F20D5A22B8758DBD /* VideoGrabberDeckLink.cpp */,
 				B0DB4F31D285F52A28EAE204 /* VideoGrabberDeckLink.h */,
 				296C0C3D587F68842ED93AFF /* VideoGrabberDeckLinkNodeBased.cpp */,
@@ -860,6 +882,15 @@
 				C85F724BB936EB34CF5A89F4 /* ps3eye_capi.h */,
 			);
 			name = ps3eye;
+			sourceTree = "<group>";
+		};
+		B0770B4D20ADE73C00A995E7 /* ofxPSBlend */ = {
+			isa = PBXGroup;
+			children = (
+				B0770B4E20ADE73C00A995E7 /* ofxPSBlend.h */,
+			);
+			name = ofxPSBlend;
+			path = ../../../addons/ofxPlaymodes/libs/ofxPSBlend;
 			sourceTree = "<group>";
 		};
 		B082F83520AC5BF100474F58 /* ofxOceanode_modules-scripting */ = {
@@ -1258,6 +1289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B091221220AEC7FF00D63FDA /* VideoMixer2Ch.cpp in Sources */,
+				B02CA50C20B3853600DC97D1 /* VideoFileGrabber.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				9F6F540B2090DA4F0040FFD8 /* ofxOceanodeNodeModelLocalPreset.cpp in Sources */,
@@ -1297,6 +1330,7 @@
 				4F63EFF3BAACF2B19051E336 /* ofxOceanodeNodeModel.cpp in Sources */,
 				FD0AF370DC74D25D420AEE82 /* Buffer.cpp in Sources */,
 				47ACD9F536CFFF069585FB0B /* VideoBufferNodeBased.cpp in Sources */,
+				B0770B4C20ADE6EE00A995E7 /* VideoPsLayer.cpp in Sources */,
 				B67787D456EEA92A8355BA0B /* FeedbackDelayFilterNodeBased.cpp in Sources */,
 				A4E5EDCCB2C332C2F3F54E41 /* FeedbackFilterNodeBased.cpp in Sources */,
 				F8B31355721C0184A96B7EF5 /* FrameInspector.cpp in Sources */,
@@ -1329,6 +1363,7 @@
 				CE1D4D25DE658F824A822CEA /* gradient.vert in Sources */,
 				6330343126BF87409BC2AE04 /* lumakey.frag in Sources */,
 				9BF3DD06DF9599EBD16E452D /* lumakey.vert in Sources */,
+				B0F13C8520C1D9010053AEE3 /* ColorCorrectFilter.cpp in Sources */,
 				6D912A3ECEB5C6B2B409D3BE /* shader.frag in Sources */,
 				F710929D0EE55E87768FF88A /* shader.vert in Sources */,
 				E46011AA013490EB7ACD2EBE /* ofxObjCPointer.cpp in Sources */,

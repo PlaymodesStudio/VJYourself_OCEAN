@@ -23,13 +23,13 @@ void    main()
     {
         float gradientValue1 = smoothstep(0.0,u_width, out_texCoord.x) ;
         float gradientValue2 = 1.0 - (smoothstep(1.0-u_width,1.0, out_texCoord.x));
-        out_Color = texColor * gradientValue2 * gradientValue1 * gradientValue2 * gradientValue1;
+        out_Color = texColor * gradientValue2 * gradientValue1 ; //* gradientValue2 * gradientValue1;
     }
     else
     {
         float gradientValue1 = smoothstep(0.0,u_width, out_texCoord.y) ;
         float gradientValue2 = 1.0 - (smoothstep(1.0-u_width,1.0, out_texCoord.y));
-        out_Color = texColor * gradientValue2 * gradientValue1 * gradientValue2 * gradientValue1;
+        out_Color = texColor * gradientValue2 * gradientValue1 ; //* gradientValue2 * gradientValue1;
         
     }
 }

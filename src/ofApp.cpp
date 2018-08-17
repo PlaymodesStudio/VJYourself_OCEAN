@@ -29,8 +29,11 @@ void ofApp::setup()
     ofSetVerticalSync(true);
     ofBackground(20,20,20);
     
+    // create registry and type registry
     auto reg = make_shared<ofxOceanodeNodeRegistry>();
     auto treg = make_shared<ofxOceanodeTypesRegistry>();
+    
+    // register models
     reg->registerModel<ofxPm::VideoGrabberNodeBased>("Video/Grabber");
     reg->registerModel<ofxPm::VideoRendererNodeBased>("Video/Renderer");
     reg->registerModel<ofxPm::VideoRendererWindowNodeBased>("Video/Renderer");
@@ -52,14 +55,22 @@ void ofApp::setup()
     reg->registerModel<ofxPm::VideoFileGrabber>("Video/Grabber");
     reg->registerModel<ofxPm::ColorCorrectFilter>("Video/Filter");
     reg->registerModel<scriptModule>("Scripting");
-
+    // register types
     treg->registerType<ofxPm::VideoFrame>();
     treg->registerType<ofxPm::VideoBufferNodeBased*>();
     
-
+    // create container, canvas
     container = make_shared<ofxOceanodeContainer>(reg, treg);
     canvas.setContainer(container);
     canvas.setup();
+    
+    // persistent modules
+    ofxOceanodeNode & vTrio = container->createPersistentNode<ofxPm::VideoTrioRendererNodeBased>();
+    
+    // call a function in one of the persistent modules
+    dynamic_cast<ofxPm::VideoTrioRendererNodeBased&>(vTrio.getNodeModel()).showMyExternalWindow(true);
+    
+    // create controls (preset,bpm,midi tabs)
     controls = make_unique<ofxOceanodeControls>(container);
     
 }

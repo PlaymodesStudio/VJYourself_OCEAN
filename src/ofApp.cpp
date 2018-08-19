@@ -19,6 +19,7 @@
 #include "VideoMixer2Ch.h"
 #include "VideoFileGrabber.h"
 #include "ColorCorrectFilter.h"
+#include "GammaFilter.h"
 
 #include "ofApp.h"
 
@@ -54,7 +55,10 @@ void ofApp::setup()
     reg->registerModel<ofxPm::VideoMixer2Ch>("Video/Mixer");
     reg->registerModel<ofxPm::VideoFileGrabber>("Video/Grabber");
     reg->registerModel<ofxPm::ColorCorrectFilter>("Video/Filter");
+    reg->registerModel<ofxPm::GammaFilter>("Video/Filter");
+    
     reg->registerModel<scriptModule>("Scripting");
+    
     // register types
     treg->registerType<ofxPm::VideoFrame>();
     treg->registerType<ofxPm::VideoBufferNodeBased*>();

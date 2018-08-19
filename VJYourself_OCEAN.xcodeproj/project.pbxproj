@@ -63,6 +63,7 @@
 		B091221220AEC7FF00D63FDA /* VideoMixer2Ch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B091221120AEC7FF00D63FDA /* VideoMixer2Ch.cpp */; };
 		B09603CA208A3E230044F733 /* EdgeBlendNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */; };
 		B0A2077621234C0200F785A6 /* ofxOceanodeOSCController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0A2077421234C0200F785A6 /* ofxOceanodeOSCController.cpp */; };
+		B0ADD3B82129CA9300A02069 /* GammaFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0ADD3B62129CA9300A02069 /* GammaFilter.cpp */; };
 		B0C694D6208AADF80085401D /* KaleidoscopeNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */; };
 		B0F13C8520C1D9010053AEE3 /* ColorCorrectFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F13C8320C1D9010053AEE3 /* ColorCorrectFilter.cpp */; };
 		B67787D456EEA92A8355BA0B /* FeedbackDelayFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566F93D84191ADF0ADE60DEA /* FeedbackDelayFilterNodeBased.cpp */; };
@@ -351,6 +352,8 @@
 		B09603C9208A3E230044F733 /* EdgeBlendNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EdgeBlendNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/filters/EdgeBlendNodeBased.cpp; sourceTree = "<group>"; };
 		B0A2077421234C0200F785A6 /* ofxOceanodeOSCController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxOceanodeOSCController.cpp; path = ../../../addons/ofxOceanode/src/Controls/ofxOceanodeOSCController.cpp; sourceTree = "<group>"; };
 		B0A2077521234C0200F785A6 /* ofxOceanodeOSCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOceanodeOSCController.h; path = ../../../addons/ofxOceanode/src/Controls/ofxOceanodeOSCController.h; sourceTree = "<group>"; };
+		B0ADD3B62129CA9300A02069 /* GammaFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GammaFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/GammaFilter.cpp; sourceTree = "<group>"; };
+		B0ADD3B72129CA9300A02069 /* GammaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GammaFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/GammaFilter.h; sourceTree = "<group>"; };
 		B0C694D4208AADF70085401D /* KaleidoscopeNodeBased.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KaleidoscopeNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/filters/KaleidoscopeNodeBased.cpp; sourceTree = "<group>"; };
 		B0C694D5208AADF80085401D /* KaleidoscopeNodeBased.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaleidoscopeNodeBased.h; path = ../../../addons/ofxPlaymodes/src/filters/KaleidoscopeNodeBased.h; sourceTree = "<group>"; };
 		B0DB4F31D285F52A28EAE204 /* VideoGrabberDeckLink.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VideoGrabberDeckLink.h; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberDeckLink.h; sourceTree = SOURCE_ROOT; };
@@ -553,6 +556,8 @@
 		418E56FFF105CF2AAC8FE2BC /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				B0ADD3B62129CA9300A02069 /* GammaFilter.cpp */,
+				B0ADD3B72129CA9300A02069 /* GammaFilter.h */,
 				B0F13C8320C1D9010053AEE3 /* ColorCorrectFilter.cpp */,
 				B0F13C8420C1D9010053AEE3 /* ColorCorrectFilter.h */,
 				B091221120AEC7FF00D63FDA /* VideoMixer2Ch.cpp */,
@@ -1364,6 +1369,7 @@
 				D7A64F8FDCFD303CB03E1B54 /* feedback.vert in Sources */,
 				107EBF62B86DF9CD74025894 /* feedbackDelay.frag in Sources */,
 				56DF3AA7BD7419202A9FCC03 /* feedbackDelay.vert in Sources */,
+				B0ADD3B82129CA9300A02069 /* GammaFilter.cpp in Sources */,
 				BF80FA195CB64C07ED2D96F1 /* gradient.frag in Sources */,
 				9F91BE8B20923BED0039B7F0 /* localPresetController.cpp in Sources */,
 				CE1D4D25DE658F824A822CEA /* gradient.vert in Sources */,

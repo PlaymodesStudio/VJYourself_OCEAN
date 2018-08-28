@@ -1,5 +1,6 @@
 ofxAubio
 ofxDatGui_PM
+ofxMidi
 ofxOceanode
 ofxPlaymodes
 ofxPoco

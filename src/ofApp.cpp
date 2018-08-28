@@ -20,6 +20,8 @@
 #include "VideoFileGrabber.h"
 #include "ColorCorrectFilter.h"
 #include "GammaFilter.h"
+#include "VideoSpliter.h"
+#include "VideoSwitcher.h"
 
 #include "ofApp.h"
 
@@ -56,6 +58,8 @@ void ofApp::setup()
     reg->registerModel<ofxPm::VideoFileGrabber>("Video/Grabber");
     reg->registerModel<ofxPm::ColorCorrectFilter>("Video/Filter");
     reg->registerModel<ofxPm::GammaFilter>("Video/Filter");
+    reg->registerModel<ofxPm::VideoSpliter>("Video/Mixer");
+    reg->registerModel<ofxPm::VideoSwitcher>("Video/Mixer");
     
     reg->registerModel<scriptModule>("Scripting");
     
@@ -67,12 +71,17 @@ void ofApp::setup()
     container = make_shared<ofxOceanodeContainer>(reg, treg);
     canvas.setContainer(container);
     canvas.setup();
-    
+
+    // persistent ...
+    container->loadPersistent();
+
+    /*
     // persistent modules
     ofxOceanodeNode & vTrio = container->createPersistentNode<ofxPm::VideoTrioRendererNodeBased>();
     
     // call a function in one of the persistent modules
     dynamic_cast<ofxPm::VideoTrioRendererNodeBased&>(vTrio.getNodeModel()).showMyExternalWindow(true);
+    */
     
     // create controls (preset,bpm,midi tabs)
     controls = make_unique<ofxOceanodeControls>(container);
@@ -88,13 +97,15 @@ void ofApp::update(){
 void ofApp::draw(){
     ofSetColor(255,0,0);
     ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(ofGetWidth()-20,10));
-    ofSetColor(0);
-    ofDrawRectangle(0,0,640, 480);
+//    ofSetColor(0);
+//    ofDrawRectangle(0,0,640, 480);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    
+    if(key == 's' && ofGetKeyPressed(OF_KEY_COMMAND)){
+        container->savePersistent();
+    }
 }
 
 //--------------------------------------------------------------

@@ -1,0 +1,43 @@
+
+this.addBoolParameter("Bool", false);
+this.addBoolParameter("Bool2", false);
+this.addFloatParameter("Float",0.0,0.0,1.0);
+
+GLOBAL oldBool=false;
+
+def listenerFunc()
+{
+    if(this.getLastChangedParameterName() == "Float")
+    {
+      var value = this.getFloatParameter("Float");
+      var iWantToSendThisBool=false;
+
+      if(value>0.5)
+      {
+          iWantToSendThisBool=true;
+      }
+      else
+      {
+          iWantToSendThisBool=false;
+      }
+
+      var sendValue = (oldBool != iWantToSendThisBool);
+
+      if(sendValue)
+      {
+        oldBool=iWantToSendThisBool;
+        this.setBoolParameter("Bool",iWantToSendThisBool);
+        this.setBoolParameter("Bool2",!iWantToSendThisBool);
+      }
+    }
+
+    else if(this.getLastChangedParameterName() == "Bool")
+    {
+    }
+    return true;
+}
+
+/*
+GLOBAL oldBool=true;
+print(v1);
+*/

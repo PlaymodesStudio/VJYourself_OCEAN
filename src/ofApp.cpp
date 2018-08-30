@@ -22,6 +22,7 @@
 #include "GammaFilter.h"
 #include "VideoSpliter.h"
 #include "VideoSwitcher.h"
+#include "BeatControl.h"
 
 #include "ofApp.h"
 
@@ -60,7 +61,8 @@ void ofApp::setup()
     reg->registerModel<ofxPm::GammaFilter>("Video/Filter");
     reg->registerModel<ofxPm::VideoSpliter>("Video/Mixer");
     reg->registerModel<ofxPm::VideoSwitcher>("Video/Mixer");
-    
+    reg->registerModel<ofxPm::BeatControl>("Video/Basic");
+
     reg->registerModel<scriptModule>("Scripting");
     
     // register types

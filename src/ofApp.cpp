@@ -23,6 +23,8 @@
 #include "VideoSpliter.h"
 #include "VideoSwitcher.h"
 #include "BeatControl.h"
+#include "Multix3DFilter.h"
+
 
 #include "ofApp.h"
 
@@ -62,6 +64,7 @@ void ofApp::setup()
     reg->registerModel<ofxPm::VideoSpliter>("Video/Mixer");
     reg->registerModel<ofxPm::VideoSwitcher>("Video/Mixer");
     reg->registerModel<ofxPm::BeatControl>("Video/Basic");
+    reg->registerModel<ofxPm::Multix3DFilter>("Video/Filter");
 
     reg->registerModel<scriptModule>("Scripting");
     

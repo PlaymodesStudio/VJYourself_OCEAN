@@ -71,6 +71,7 @@
 		A4E5EDCCB2C332C2F3F54E41 /* FeedbackFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C68D9F0D64056BB6E3656039 /* FeedbackFilterNodeBased.cpp */; };
 		A927ADF845D4C1CD10987F55 /* VideoSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118E3F678A0E7344AC2E45E6 /* VideoSink.cpp */; };
 		AEEF210AFBFAC3A8AEFF37A2 /* VideoFileGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75B741D9BECFBA490C8AE9AF /* VideoFileGrabber.cpp */; };
+		B0387C88213A15AF002996F6 /* Multix3DFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0387C86213A15AF002996F6 /* Multix3DFilter.cpp */; };
 		B06F894A2136FADD003487FD /* BeatControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06F89492136FADC003487FD /* BeatControl.cpp */; };
 		B0B0AB132134DE67007B12DE /* VideoSwitcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0B0AB122134DE67007B12DE /* VideoSwitcher.cpp */; };
 		B67787D456EEA92A8355BA0B /* FeedbackDelayFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566F93D84191ADF0ADE60DEA /* FeedbackDelayFilterNodeBased.cpp */; };
@@ -372,6 +373,8 @@
 		ABDEF0ACF05BF28F5C74E008 /* RtMidi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RtMidi.cpp; path = ../../../addons/ofxMidi/libs/rtmidi/RtMidi.cpp; sourceTree = SOURCE_ROOT; };
 		AC8A5A0F0DD211E2E3C1E18D /* chaiscript_common.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = chaiscript_common.hpp; path = "src/ofxOceanode_modules-scripting/chaiscript/language/chaiscript_common.hpp"; sourceTree = SOURCE_ROOT; };
 		AF53C1FCB4DC2DA249C71CE4 /* asn1t.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = asn1t.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/asn1t.h; sourceTree = SOURCE_ROOT; };
+		B0387C86213A15AF002996F6 /* Multix3DFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Multix3DFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/Multix3DFilter.cpp; sourceTree = "<group>"; };
+		B0387C87213A15AF002996F6 /* Multix3DFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Multix3DFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/Multix3DFilter.h; sourceTree = "<group>"; };
 		B06F89482136FADC003487FD /* BeatControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeatControl.h; path = ../../../addons/ofxPlaymodes/src/filters/BeatControl.h; sourceTree = "<group>"; };
 		B06F89492136FADC003487FD /* BeatControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BeatControl.cpp; path = ../../../addons/ofxPlaymodes/src/filters/BeatControl.cpp; sourceTree = "<group>"; };
 		B070CD08427D967C9CE7C1CA /* VideoGrabberPS3EyeNodeBased.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VideoGrabberPS3EyeNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberPS3EyeNodeBased.cpp; sourceTree = SOURCE_ROOT; };
@@ -652,8 +655,8 @@
 				19E54E17BBDCAE2D81DD48D1 /* LooperFilter.h */,
 				0706FD38956033BD511B47CB /* LumaFilterNodeBased.cpp */,
 				B616FD249F7B7D94EDF3950E /* LumaFilterNodeBased.h */,
-				5F77784E212FB33321AA99A1 /* MultixFilter.cpp */,
-				FC282E3C23B1B451197F8EB2 /* MultixFilter.h */,
+				B0387C86213A15AF002996F6 /* Multix3DFilter.cpp */,
+				B0387C87213A15AF002996F6 /* Multix3DFilter.h */,
 				8A7AB81C52A5AD5C1B63FD11 /* RepeaterFilter.cpp */,
 				3383B4C2D8B67CB2BE28E12A /* RepeaterFilter.h */,
 				586A4F5ADB50571EE58F9CE0 /* VideoFilter.cpp */,
@@ -666,6 +669,8 @@
 				290678CC7A580FE50CE2CFF8 /* VideoSpliter.h */,
 				B0B0AB122134DE67007B12DE /* VideoSwitcher.cpp */,
 				B0B0AB112134DE67007B12DE /* VideoSwitcher.h */,
+				5F77784E212FB33321AA99A1 /* MultixFilter.cpp */,
+				FC282E3C23B1B451197F8EB2 /* MultixFilter.h */,
 			);
 			name = filters;
 			sourceTree = "<group>";
@@ -1441,6 +1446,7 @@
 				881AF887EC2124F4105DE9E1 /* ofxMidiClock.cpp in Sources */,
 				C6FE64F74F1EA1D98C8F9847 /* ofxMidiMessage.cpp in Sources */,
 				63F9FE1D90234FA6DE6F509E /* ofxMidi.cpp in Sources */,
+				B0387C88213A15AF002996F6 /* Multix3DFilter.cpp in Sources */,
 				0BFC9C20FD7E3C8D5873AA97 /* ofxMidiIn.cpp in Sources */,
 				63D0FD8734D5760B8080C901 /* RtMidi.cpp in Sources */,
 				4C8024D8DD46223D43C514C0 /* ofxOceanodeNode.cpp in Sources */,

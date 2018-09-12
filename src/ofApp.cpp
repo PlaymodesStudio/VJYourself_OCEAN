@@ -24,6 +24,10 @@
 #include "VideoSwitcher.h"
 #include "BeatControl.h"
 #include "Multix3DFilter.h"
+//#include "ISFFilter.h"
+#include "HalfToneFilter.h"
+
+#include "ofxOceanodeMidiController.h"
 
 
 #include "ofApp.h"
@@ -33,7 +37,7 @@ void ofApp::setup()
 {
     ofDisableArbTex();
     ofSetVerticalSync(true);
-    ofBackground(20,20,20);
+    
     
     // create registry and type registry
     auto reg = make_shared<ofxOceanodeNodeRegistry>();
@@ -65,6 +69,8 @@ void ofApp::setup()
     reg->registerModel<ofxPm::VideoSwitcher>("Video/Mixer");
     reg->registerModel<ofxPm::BeatControl>("Video/Basic");
     reg->registerModel<ofxPm::Multix3DFilter>("Video/Filter");
+//    reg->registerModel<ofxPm::ISFFilter>("Video/Filter");
+    reg->registerModel<ofxPm::HalfToneFilter>("Video/Filter");
 
     reg->registerModel<scriptModule>("Scripting");
     
@@ -91,11 +97,16 @@ void ofApp::setup()
     // create controls (preset,bpm,midi tabs)
     controls = make_unique<ofxOceanodeControls>(container);
     
+    
+    
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
-    
+void ofApp::update()
+{
+    bool isMidiLearning = controls->get<ofxOceanodeMidiController>()->getIsMidiLearn();
+    if(isMidiLearning) ofBackground(60,20,20);
+    else ofBackground(20,20,20);
 }
 
 //--------------------------------------------------------------

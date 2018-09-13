@@ -54,6 +54,8 @@ void    main()
     float lMinSmooth = u_min - u_smooth;
     float lMaxSmooth = u_max + u_smooth;
 
+    if(luminance<lMinSmooth) discard;
+
     levelsColor[3] = smoothstep(u_max, lMaxSmooth, luminance); // fix alpha
 
     levelsColor = levelsColor * vec4(texColor.aaa, 1.0f);

@@ -30,5 +30,6 @@ class ofApp : public ofBaseApp{
     unique_ptr<ofxOceanodeControls> controls;
     shared_ptr<ofxOceanodeContainer> container;
     
+    bool    isGuiCollapsed;
 
 };

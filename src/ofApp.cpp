@@ -26,6 +26,7 @@
 #include "Multix3DFilter.h"
 //#include "ISFFilter.h"
 #include "HalfToneFilter.h"
+#include "inputProcessingFilter.h"
 
 #include "ofxOceanodeMidiController.h"
 
@@ -37,7 +38,7 @@ void ofApp::setup()
 {
     ofDisableArbTex();
     ofSetVerticalSync(true);
-    
+    isGuiCollapsed=false;
     
     // create registry and type registry
     auto reg = make_shared<ofxOceanodeNodeRegistry>();
@@ -71,6 +72,7 @@ void ofApp::setup()
     reg->registerModel<ofxPm::Multix3DFilter>("Video/Filter");
 //    reg->registerModel<ofxPm::ISFFilter>("Video/Filter");
     reg->registerModel<ofxPm::HalfToneFilter>("Video/Filter");
+    reg->registerModel<ofxPm::inputProcessingFilter>("Video/Filter");
 
     reg->registerModel<scriptModule>("Scripting");
     
@@ -121,6 +123,18 @@ void ofApp::draw(){
 void ofApp::keyPressed(int key){
     if(key == 's' && ofGetKeyPressed(OF_KEY_COMMAND)){
         container->savePersistent();
+    }
+    if(key == 'k' && ofGetKeyPressed(OF_KEY_COMMAND)){
+        if(!isGuiCollapsed)
+        {
+            container->collapseGuis();
+            isGuiCollapsed=true;
+        }
+        else
+        {
+            container->expandGuis();
+            isGuiCollapsed=false;
+        }
     }
 }
 

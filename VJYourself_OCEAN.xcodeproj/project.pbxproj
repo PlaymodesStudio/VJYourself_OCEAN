@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019E4E5A214AAFC500591FCA /* inputProcessingFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019E4E58214AAFC500591FCA /* inputProcessingFilter.cpp */; };
 		026CF24E227F5DFC3C392E27 /* ofxOceanodePresetsController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C27DB6A973A67BE0BF855933 /* ofxOceanodePresetsController.cpp */; };
 		08DA4B78B9754668FE88DCB1 /* ps3eye_capi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08C6A18DEC047C1149074911 /* ps3eye_capi.cpp */; };
 		0BEE6D908B90BD8BCB7071A4 /* ofxOceanodeMidiBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0DF3E4F877F8E51B24698B3 /* ofxOceanodeMidiBinding.cpp */; };
@@ -73,8 +74,6 @@
 		AEEF210AFBFAC3A8AEFF37A2 /* VideoFileGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75B741D9BECFBA490C8AE9AF /* VideoFileGrabber.cpp */; };
 		B0253DF22143EBB000405754 /* HalfToneFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0253DF12143EBB000405754 /* HalfToneFilter.cpp */; };
 		B0387C88213A15AF002996F6 /* Multix3DFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0387C86213A15AF002996F6 /* Multix3DFilter.cpp */; };
-		B0387CA0213CA331002996F6 /* jsonxx.cc in Sources */ = {isa = PBXBuildFile; fileRef = B0387C94213CA331002996F6 /* jsonxx.cc */; };
-		B0387CA3213CA3A2002996F6 /* ISFFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0387CA2213CA3A2002996F6 /* ISFFilter.cpp */; };
 		B06F894A2136FADD003487FD /* BeatControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06F89492136FADC003487FD /* BeatControl.cpp */; };
 		B0B0AB132134DE67007B12DE /* VideoSwitcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0B0AB122134DE67007B12DE /* VideoSwitcher.cpp */; };
 		B0C8AF402147194200DB9FA3 /* switcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0C8AF3E2147194200DB9FA3 /* switcher.cpp */; };
@@ -147,6 +146,8 @@
 
 /* Begin PBXFileReference section */
 		00B33DB54054B6B56ECB833C /* EdgeBlendNodeBased.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EdgeBlendNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/filters/EdgeBlendNodeBased.cpp; sourceTree = SOURCE_ROOT; };
+		019E4E58214AAFC500591FCA /* inputProcessingFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inputProcessingFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/inputProcessingFilter.cpp; sourceTree = "<group>"; };
+		019E4E59214AAFC500591FCA /* inputProcessingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inputProcessingFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/inputProcessingFilter.h; sourceTree = "<group>"; };
 		01BACD5A6956F76651C5B11E /* VideoMixer2Ch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VideoMixer2Ch.cpp; path = ../../../addons/ofxPlaymodes/src/filters/VideoMixer2Ch.cpp; sourceTree = SOURCE_ROOT; };
 		027F095A0217A890F2B21761 /* ofxOceanodeNodeModelLocalPreset.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOceanodeNodeModelLocalPreset.h; path = ../../../addons/ofxOceanode/src/Nodes/Base_Nodes/ofxOceanodeNodeModelLocalPreset.h; sourceTree = SOURCE_ROOT; };
 		03E42CA654A61594B6D8167F /* ofxOceanodeNodeModelExternalWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOceanodeNodeModelExternalWindow.cpp; path = ../../../addons/ofxOceanode/src/Nodes/Base_Nodes/ofxOceanodeNodeModelExternalWindow.cpp; sourceTree = SOURCE_ROOT; };
@@ -381,18 +382,6 @@
 		B0253DF12143EBB000405754 /* HalfToneFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HalfToneFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/HalfToneFilter.cpp; sourceTree = "<group>"; };
 		B0387C86213A15AF002996F6 /* Multix3DFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Multix3DFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/Multix3DFilter.cpp; sourceTree = "<group>"; };
 		B0387C87213A15AF002996F6 /* Multix3DFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Multix3DFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/Multix3DFilter.h; sourceTree = "<group>"; };
-		B0387C94213CA331002996F6 /* jsonxx.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsonxx.cc; sourceTree = "<group>"; };
-		B0387C95213CA331002996F6 /* jsonxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonxx.h; sourceTree = "<group>"; };
-		B0387C96213CA331002996F6 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		B0387C98213CA331002996F6 /* ofxISF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxISF.h; sourceTree = "<group>"; };
-		B0387C9A213CA331002996F6 /* Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chain.h; sourceTree = "<group>"; };
-		B0387C9B213CA331002996F6 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
-		B0387C9C213CA331002996F6 /* Gui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gui.h; sourceTree = "<group>"; };
-		B0387C9D213CA331002996F6 /* Uniforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uniforms.h; sourceTree = "<group>"; };
-		B0387C9E213CA331002996F6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		B0387C9F213CA331002996F6 /* CodeGenerater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeGenerater.h; sourceTree = "<group>"; };
-		B0387CA1213CA3A2002996F6 /* ISFFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISFFilter.h; path = ../../../addons/ofxPlaymodes/src/filters/ISFFilter.h; sourceTree = "<group>"; };
-		B0387CA2213CA3A2002996F6 /* ISFFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ISFFilter.cpp; path = ../../../addons/ofxPlaymodes/src/filters/ISFFilter.cpp; sourceTree = "<group>"; };
 		B06F89482136FADC003487FD /* BeatControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeatControl.h; path = ../../../addons/ofxPlaymodes/src/filters/BeatControl.h; sourceTree = "<group>"; };
 		B06F89492136FADC003487FD /* BeatControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BeatControl.cpp; path = ../../../addons/ofxPlaymodes/src/filters/BeatControl.cpp; sourceTree = "<group>"; };
 		B070CD08427D967C9CE7C1CA /* VideoGrabberPS3EyeNodeBased.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VideoGrabberPS3EyeNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberPS3EyeNodeBased.cpp; sourceTree = SOURCE_ROOT; };
@@ -653,10 +642,10 @@
 		418E56FFF105CF2AAC8FE2BC /* filters */ = {
 			isa = PBXGroup;
 			children = (
+				019E4E58214AAFC500591FCA /* inputProcessingFilter.cpp */,
+				019E4E59214AAFC500591FCA /* inputProcessingFilter.h */,
 				B0253DF12143EBB000405754 /* HalfToneFilter.cpp */,
 				B0253DF02143EBAF00405754 /* HalfToneFilter.h */,
-				B0387CA2213CA3A2002996F6 /* ISFFilter.cpp */,
-				B0387CA1213CA3A2002996F6 /* ISFFilter.h */,
 				B06F89492136FADC003487FD /* BeatControl.cpp */,
 				B06F89482136FADC003487FD /* BeatControl.h */,
 				F5235F87972A1C4E750732E7 /* ColorCorrectFilter.cpp */,
@@ -754,7 +743,6 @@
 		4CEE20CACA6A2D953F81B261 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				B0387C91213CA331002996F6 /* ofxISF */,
 				78BCF575429133CA0435B4B4 /* ofxPSBlend */,
 				A85F662AA1D93BE39706B459 /* ps3eye */,
 			);
@@ -1104,56 +1092,6 @@
 				C85F724BB936EB34CF5A89F4 /* ps3eye_capi.h */,
 			);
 			name = ps3eye;
-			sourceTree = "<group>";
-		};
-		B0387C91213CA331002996F6 /* ofxISF */ = {
-			isa = PBXGroup;
-			children = (
-				B0387C92213CA331002996F6 /* libs */,
-				B0387C97213CA331002996F6 /* src */,
-			);
-			name = ofxISF;
-			path = ../../../addons/ofxPlaymodes/libs/ofxISF;
-			sourceTree = "<group>";
-		};
-		B0387C92213CA331002996F6 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				B0387C93213CA331002996F6 /* jsonxx */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		B0387C93213CA331002996F6 /* jsonxx */ = {
-			isa = PBXGroup;
-			children = (
-				B0387C94213CA331002996F6 /* jsonxx.cc */,
-				B0387C95213CA331002996F6 /* jsonxx.h */,
-				B0387C96213CA331002996F6 /* LICENSE.txt */,
-			);
-			path = jsonxx;
-			sourceTree = "<group>";
-		};
-		B0387C97213CA331002996F6 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				B0387C98213CA331002996F6 /* ofxISF.h */,
-				B0387C99213CA331002996F6 /* ofxISF */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		B0387C99213CA331002996F6 /* ofxISF */ = {
-			isa = PBXGroup;
-			children = (
-				B0387C9A213CA331002996F6 /* Chain.h */,
-				B0387C9B213CA331002996F6 /* Shader.h */,
-				B0387C9C213CA331002996F6 /* Gui.h */,
-				B0387C9D213CA331002996F6 /* Uniforms.h */,
-				B0387C9E213CA331002996F6 /* Constants.h */,
-				B0387C9F213CA331002996F6 /* CodeGenerater.h */,
-			);
-			path = ofxISF;
 			sourceTree = "<group>";
 		};
 		B2C98B62869583DB9FE30DA7 /* openssl */ = {
@@ -1510,7 +1448,6 @@
 				9C7B8B4D99CDFC508E76CC3A /* ofxAubioOnset.cpp in Sources */,
 				C60077973A257D8F44947E2E /* ofxAubioBlock.cpp in Sources */,
 				101D2DB773940813A5C898CD /* ofxAubioPitch.cpp in Sources */,
-				B0387CA3213CA3A2002996F6 /* ISFFilter.cpp in Sources */,
 				67383740F5CC47ED5F955A76 /* ofxAubioMelBands.cpp in Sources */,
 				479DCA850DD8BB469A777AD4 /* ofxAubioBeat.cpp in Sources */,
 				4A277DA746402C76CE307770 /* ofxDatGuiComponent.cpp in Sources */,
@@ -1522,7 +1459,6 @@
 				83D9F930112E0944444124EE /* ofxMidiOut.cpp in Sources */,
 				B0C8AF402147194200DB9FA3 /* switcher.cpp in Sources */,
 				BCC8D420CBA9217E437D2D76 /* ofxRtMidiIn.cpp in Sources */,
-				B0387CA0213CA331002996F6 /* jsonxx.cc in Sources */,
 				3AEFE4FA8AD5C72671AD07F8 /* ofxRtMidiOut.cpp in Sources */,
 				881AF887EC2124F4105DE9E1 /* ofxMidiClock.cpp in Sources */,
 				C6FE64F74F1EA1D98C8F9847 /* ofxMidiMessage.cpp in Sources */,
@@ -1554,6 +1490,7 @@
 				210113B93D0C86F7DF921A87 /* ofxOceanodeOSCController.cpp in Sources */,
 				7B8EE5B7F57088CD23B7934D /* ofxOceanodeControls.cpp in Sources */,
 				7B5743F2E77F2D5AD9B436F0 /* ofxOceanodeBaseController.cpp in Sources */,
+				019E4E5A214AAFC500591FCA /* inputProcessingFilter.cpp in Sources */,
 				EB90AF0EFA3A80E58C07AC46 /* ofxOceanodeMidiController.cpp in Sources */,
 				026CF24E227F5DFC3C392E27 /* ofxOceanodePresetsController.cpp in Sources */,
 				717BCDD6091D90F262DC7860 /* ofxOceanodeBPMController.cpp in Sources */,

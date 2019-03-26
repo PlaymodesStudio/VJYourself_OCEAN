@@ -1,6 +1,6 @@
 #pragma once
 
-#define USE_POCO;
+#define USE_POCO
 
 #include "ofMain.h"
 #include "ofxOceanode.h"

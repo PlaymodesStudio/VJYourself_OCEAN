@@ -119,26 +119,20 @@ void ofApp::update()
 void ofApp::draw(){
     ofSetColor(255,0,0);
     ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(ofGetWidth()-20,10));
+    ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(20,10));
 //    ofSetColor(0);
 //    ofDrawRectangle(0,0,640, 480);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    if(key == 's' && ofGetKeyPressed(OF_KEY_COMMAND)){
-        container->savePersistent();
-    }
-    if(key == 'k' && ofGetKeyPressed(OF_KEY_COMMAND)){
-        if(!isGuiCollapsed)
-        {
-            container->collapseGuis();
-            isGuiCollapsed=true;
-        }
-        else
-        {
-            container->expandGuis();
-            isGuiCollapsed=false;
-        }
+    if(ofGetKeyPressed(OF_KEY_COMMAND)){
+        if(key == 'p') container->savePersistent();
+        else if(key == 'u') container->updatePersistent();
+        else if(key == 'c') container->collapseGuis();
+        else if(key == 'e') container->expandGuis();
+        else if(key == 's') container->saveCurrentPreset();
+        else if(key == 'r') container->resetPhase();
     }
 }
 

@@ -28,6 +28,7 @@
 #include "HalfToneFilter.h"
 #include "inputProcessingFilter.h"
 #include "manualOscillatorBank.h"
+#include "viscaControl.h"
 
 #include "ofxOceanodeMidiController.h"
 
@@ -77,6 +78,7 @@ void ofApp::setup()
 
     reg->registerModel<scriptModule>("Scripting");
     reg->registerModel<manualOscillatorBank>("Generators");
+    reg->registerModel<viscaControl>("VISCA");
     
     // register types
     treg->registerType<ofxPm::VideoFrame>();

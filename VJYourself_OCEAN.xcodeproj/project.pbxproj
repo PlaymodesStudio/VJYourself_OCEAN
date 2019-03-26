@@ -50,6 +50,7 @@
 		67383740F5CC47ED5F955A76 /* ofxAubioMelBands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 776A1553D592FD9AA388C543 /* ofxAubioMelBands.cpp */; };
 		6D912A3ECEB5C6B2B409D3BE /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 60E3C6EEE2D3979D3FEE72D2 /* shader.frag */; };
 		6DFF9D86D238B62341F3A71B /* feedback.frag in Sources */ = {isa = PBXBuildFile; fileRef = D396FCFDF7C570E63EC89A49 /* feedback.frag */; };
+		6EE384C13C514F47DA1CA235 /* manualOscillatorBank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD1723E2540DDC1702163C59 /* manualOscillatorBank.cpp */; };
 		717BCDD6091D90F262DC7860 /* ofxOceanodeBPMController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8150F1936B064445E99AF76 /* ofxOceanodeBPMController.cpp */; };
 		7416EB8AFDAB615D36EC3137 /* phasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A96A2891A3C36C7DCA0F7 /* phasor.cpp */; };
 		77DBA139FDBC48F82BC163E9 /* RepeaterFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AB81C52A5AD5C1B63FD11 /* RepeaterFilter.cpp */; };
@@ -153,6 +154,7 @@
 		118E3F678A0E7344AC2E45E6 /* VideoSink.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VideoSink.cpp; path = ../../../addons/ofxPlaymodes/src/pipeline/video/VideoSink.cpp; sourceTree = SOURCE_ROOT; };
 		125F57661DCF7E855F76266F /* chaiscript.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = chaiscript.hpp; path = "src/ofxOceanode_modules-scripting/chaiscript/chaiscript.hpp"; sourceTree = SOURCE_ROOT; };
 		125FC7DF81918DE565891A92 /* reindexer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reindexer.h; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/Modifiers/reindexer.h; sourceTree = SOURCE_ROOT; };
+		12E2704BB9AF2811EFB4299D /* manualOscillatorBank.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = manualOscillatorBank.h; path = src/manualOscillatorBank.h; sourceTree = SOURCE_ROOT; };
 		149298D896FDA631EE81BEB9 /* ofxDatGuiSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxDatGuiSlider.h; path = ../../../addons/ofxDatGui_PM/src/components/ofxDatGuiSlider.h; sourceTree = SOURCE_ROOT; };
 		154FD06C49FC744B1DA16634 /* ps3eye.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ps3eye.h; path = ../../../addons/ofxPlaymodes/libs/ps3eye/ps3eye.h; sourceTree = SOURCE_ROOT; };
 		15DDBA686E95072304567B4D /* bind_first.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bind_first.hpp; path = "src/ofxOceanode_modules-scripting/chaiscript/dispatchkit/bind_first.hpp"; sourceTree = SOURCE_ROOT; };
@@ -1690,6 +1692,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				AD1723E2540DDC1702163C59 /* manualOscillatorBank.cpp */,
+				12E2704BB9AF2811EFB4299D /* manualOscillatorBank.h */,
 				841C41D3663FFD049A798B69 /* ofxOceanode_modules-scripting */,
 			);
 			path = src;
@@ -1856,6 +1860,7 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				6EE384C13C514F47DA1CA235 /* manualOscillatorBank.cpp in Sources */,
 				3B08BD13D76B507752129349 /* scriptModule.cpp in Sources */,
 				479DCA850DD8BB469A777AD4 /* ofxAubioBeat.cpp in Sources */,
 				C60077973A257D8F44947E2E /* ofxAubioBlock.cpp in Sources */,

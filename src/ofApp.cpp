@@ -27,6 +27,7 @@
 //#include "ISFFilter.h"
 #include "HalfToneFilter.h"
 #include "inputProcessingFilter.h"
+#include "manualOscillatorBank.h"
 
 #include "ofxOceanodeMidiController.h"
 
@@ -75,6 +76,7 @@ void ofApp::setup()
     reg->registerModel<ofxPm::inputProcessingFilter>("Video/Filter");
 
     reg->registerModel<scriptModule>("Scripting");
+    reg->registerModel<manualOscillatorBank>("Generators");
     
     // register types
     treg->registerType<ofxPm::VideoFrame>();

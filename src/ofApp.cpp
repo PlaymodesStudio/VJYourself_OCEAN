@@ -119,8 +119,7 @@ void ofApp::update()
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofSetColor(255,0,0);
-    ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(ofGetWidth()-20,10));
-    ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(20,10));
+    ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(10,ofGetHeight() - 10));
 //    ofSetColor(0);
 //    ofDrawRectangle(0,0,640, 480);
 }

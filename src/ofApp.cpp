@@ -40,6 +40,7 @@ void ofApp::setup()
 {
     ofDisableArbTex();
     ofSetVerticalSync(true);
+    ofSetFrameRate(60);
     isGuiCollapsed=false;
     
     // create registry and type registry

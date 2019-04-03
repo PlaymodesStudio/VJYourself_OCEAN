@@ -3,5 +3,6 @@ ofxDatGui_PM
 ofxMidi
 ofxNetwork
 ofxOceanode
+ofxOsc
 ofxPlaymodes
 ofxPoco

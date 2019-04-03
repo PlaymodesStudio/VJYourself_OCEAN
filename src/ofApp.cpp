@@ -111,9 +111,9 @@ void ofApp::setup()
 //--------------------------------------------------------------
 void ofApp::update()
 {
-    bool isMidiLearning = controls->get<ofxOceanodeMidiController>()->getIsMidiLearn();
-    if(isMidiLearning) ofBackground(60,20,20);
-    else ofBackground(20,20,20);
+//    bool isMidiLearning = controls->get<ofxOceanodeMidiController>()->getIsMidiLearn();
+//    if(isMidiLearning) ofBackground(60,20,20);
+//    else ofBackground(20,20,20);
 }
 
 //--------------------------------------------------------------

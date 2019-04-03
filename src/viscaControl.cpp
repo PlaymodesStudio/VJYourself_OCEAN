@@ -68,7 +68,8 @@ void viscaControl::setup(){
         udpConnection.Send(message.data(), message.size());
         
         vector<char> completition(3, 0);
-        while(completition[1] != static_cast<char>(0x51)){
+        float startTimeout = ofGetElapsedTimef();
+        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 2){
             udpConnection.Receive(completition.data(), completition.size());
         }
         
@@ -82,7 +83,8 @@ void viscaControl::setup(){
         udpConnection.Send(message.data(), message.size());
         
         completition = vector<char>(3, 0);
-        while(completition[1] != static_cast<char>(0x51)){
+        startTimeout = ofGetElapsedTimef();
+        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 2){
             udpConnection.Receive(completition.data(), completition.size());
         }
         
@@ -91,8 +93,6 @@ void viscaControl::setup(){
         message.insert(message.end(), cameraFocus.begin(), cameraFocus.end());
         message.insert(message.end(), static_cast<char>(0xFF));
         udpConnection.Send(message.data(), message.size());
-        
-        
     }));
 }
 

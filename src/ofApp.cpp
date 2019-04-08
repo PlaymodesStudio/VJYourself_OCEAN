@@ -29,6 +29,7 @@
 #include "inputProcessingFilter.h"
 #include "manualOscillatorBank.h"
 #include "viscaControl.h"
+#include "MirrorRenderer.h"
 
 #include "ofxOceanodeMidiController.h"
 
@@ -76,6 +77,7 @@ void ofApp::setup()
 //    reg->registerModel<ofxPm::ISFFilter>("Video/Filter");
     reg->registerModel<ofxPm::HalfToneFilter>("Video/Filter");
     reg->registerModel<ofxPm::inputProcessingFilter>("Video/Filter");
+    reg->registerModel<ofxPm::MirrorRenderer>("Video/Filter");
 
     reg->registerModel<scriptModule>("Scripting");
     reg->registerModel<manualOscillatorBank>("Generators");

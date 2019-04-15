@@ -107,7 +107,11 @@ void ofApp::setup()
     controls = make_unique<ofxOceanodeControls>(container);
     
     
-    
+    ofxOscSender sender;
+    sender.setup("localhost", 8888);
+    ofxOscMessage m;
+    m.setAddress("t/play");
+    sender.sendMessage(m);
 }
 
 //--------------------------------------------------------------

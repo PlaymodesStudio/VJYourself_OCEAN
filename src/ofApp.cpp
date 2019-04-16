@@ -39,6 +39,7 @@
 //--------------------------------------------------------------
 void ofApp::setup()
 {
+    ofSetEscapeQuitsApp(false);
     ofDisableArbTex();
     ofSetVerticalSync(true);
     ofSetFrameRate(60);

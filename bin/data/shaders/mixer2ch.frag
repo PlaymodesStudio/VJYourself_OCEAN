@@ -8,6 +8,7 @@ uniform sampler2D   tex0;
 uniform sampler2D   tex1;
 uniform float       u_crossfade;
 uniform int         u_mixMode;
+uniform float       u_isChannel2;
 
 // Out
 out vec4            out_Color;
@@ -16,6 +17,8 @@ void    main()
 {
     vec4    texColor = texture(tex0, out_texCoord);
     vec4    texColor2 = texture(tex1, out_texCoord);
+    
+    if(u_isChannel2!=1.0) texColor2 = vec4(0.0,0.0,0.0,1.0);
     
     if(u_mixMode==0)
     {

@@ -111,13 +111,16 @@ void ofApp::setup()
     ofxOscSender sender;
     sender.setup("localhost", 8000);
     ofxOscMessage m;
-    m.setAddress("t/time");
-    m.addFloatArg(0);
+    m.setAddress("t/stop");
     sender.sendMessage(m);
-    sleep(2);
     ofxOscMessage m2;
-    m2.setAddress("t/play");
+    m2.setAddress("t/time");
+    m2.addFloatArg(0);
     sender.sendMessage(m2);
+    sleep(2);
+    ofxOscMessage m3;
+    m3.setAddress("t/play");
+    sender.sendMessage(m3);
 }
 
 //--------------------------------------------------------------

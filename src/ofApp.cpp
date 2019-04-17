@@ -109,11 +109,12 @@ void ofApp::setup()
     
     
     ofxOscSender sender;
-    sender.setup("localhost", 8888);
+    sender.setup("localhost", 8000);
     ofxOscMessage m;
     m.setAddress("t/time");
     m.addFloatArg(0);
     sender.sendMessage(m);
+    sleep(2);
     ofxOscMessage m2;
     m2.setAddress("t/play");
     sender.sendMessage(m2);

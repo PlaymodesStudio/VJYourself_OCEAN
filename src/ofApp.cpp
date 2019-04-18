@@ -107,7 +107,7 @@ void ofApp::setup()
     // create controls (preset,bpm,midi tabs)
     controls = make_unique<ofxOceanodeControls>(container);
     
-    
+    container->loadPreset("Presets/SHOW/1--Multix_simple");
     ofxOscSender sender;
     sender.setup("localhost", 8000);
     ofxOscMessage m;

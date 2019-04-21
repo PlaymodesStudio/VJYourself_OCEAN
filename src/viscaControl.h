@@ -13,7 +13,9 @@
 
 class viscaControl : public ofxOceanodeNodeModel{
 public:
-    viscaControl() : ofxOceanodeNodeModel("Visca Control"){}
+    viscaControl() : ofxOceanodeNodeModel("Visca Control"){
+        isPersistent = false;
+    }
     
     void setup() override;
     void update(ofEventArgs &a) override;
@@ -24,11 +26,18 @@ public:
         json["Cam_Zoom"] = cameraZoom;
     };
     
+    void loadCustomPersistent(ofJson &json) override{
+        isPersistent = true;
+    }
+    
     void presetRecallAfterSettingParameters(ofJson &json) override{
-        cameraPosition = json["Cam_Position"];
-        cameraFocus = json["Cam_Focus"];
-        cameraZoom = json["Cam_Zoom"];
-        setCameraView.trigger();
+        if(isPersistent){
+            cameraPosition = json["Cam_Position"];
+            cameraFocus = json["Cam_Focus"];
+            cameraZoom = json["Cam_Zoom"];
+            setCameraView.trigger();
+        }
+        isPersistent = false;
     }
     
 private:
@@ -49,6 +58,8 @@ private:
     vector<char> cameraPosition;
     vector<char> cameraFocus;
     vector<char> cameraZoom;
+    
+    bool isPersistent;
 };
 
 #endif /* viscaControl_h */

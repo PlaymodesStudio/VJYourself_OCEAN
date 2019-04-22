@@ -69,7 +69,7 @@ void viscaControl::setup(){
         
         vector<char> completition(3, 0);
         float startTimeout = ofGetElapsedTimef();
-        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 2){
+        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 5){
             udpConnection.Receive(completition.data(), completition.size());
         }
         
@@ -84,7 +84,7 @@ void viscaControl::setup(){
         
         completition = vector<char>(3, 0);
         startTimeout = ofGetElapsedTimef();
-        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 2){
+        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 5){
             udpConnection.Receive(completition.data(), completition.size());
         }
         

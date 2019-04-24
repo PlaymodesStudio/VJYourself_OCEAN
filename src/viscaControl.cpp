@@ -19,6 +19,15 @@ void viscaControl::setup(){
     //parameters->add(right.set("Right", false));
     parameters->add(getCameraView.set("Get Cam View"));
     parameters->add(setCameraView.set("Set Cam View"));
+    auto &info = addParameterToGroupAndInfo(cameraPositionGui.set("Camera Pos", ""));
+    info.isSavePreset = false;
+    info.isSaveProject = false;
+    auto &info2 = addParameterToGroupAndInfo(cameraFocusGui.set("Camera Focus", ""));
+    info2.isSavePreset = false;
+    info2.isSaveProject = false;
+    auto &info3 = addParameterToGroupAndInfo(cameraZoomGui.set("Camera Zoom", ""));
+    info3.isSavePreset = false;
+    info3.isSaveProject = false;
     
     listeners.push(ip.newListener([this](string &_ip){
         ofxUDPSettings settings;
@@ -40,6 +49,7 @@ void viscaControl::setup(){
         vector<char> response(11);
         receiveInquiry(response);
         cameraPosition = vector<char>(response.begin()+2, response.end()-1);
+        cameraPositionGui = ofToString(vector<int>{cameraPosition[3] + (cameraPosition[2] * 16) + (cameraPosition[1] * 16 * 16) + (cameraPosition[0] * 16 * 16 * 16) , cameraPosition[7] + (cameraPosition[6] * 16) + (cameraPosition[5] * 16 * 16) + (cameraPosition[4] * 16 * 16 * 16)});
         
         //Cam Focus
         message = {static_cast<char>(0x81), static_cast<char>(0x09), static_cast<char>(0x04), static_cast<char>(0x48), static_cast<char>(0xFF)};
@@ -47,6 +57,7 @@ void viscaControl::setup(){
         response.resize(7);
         receiveInquiry(response);
         cameraFocus = vector<char>(response.begin()+2, response.end()-1);
+        cameraFocusGui = ofToString(cameraFocus[3] + (cameraFocus[2] * 16) + (cameraFocus[1] * 16 * 16) + (cameraFocus[0] * 16 * 16 * 16));
         
         //Cam Zoom
         message = {static_cast<char>(0x81), static_cast<char>(0x09), static_cast<char>(0x04), static_cast<char>(0x47), static_cast<char>(0xFF)};
@@ -54,7 +65,7 @@ void viscaControl::setup(){
         response.resize(7);
         receiveInquiry(response);
         cameraZoom = vector<char>(response.begin()+2, response.end()-1);
-        
+        cameraZoomGui = ofToString(cameraZoom[3] + (cameraZoom[2] * 16) + (cameraZoom[1] * 16 * 16) + (cameraZoom[0] * 16 * 16 * 16));
     }));
     
     listeners.push(setCameraView.newListener([this](){
@@ -69,7 +80,7 @@ void viscaControl::setup(){
         
         vector<char> completition(3, 0);
         float startTimeout = ofGetElapsedTimef();
-        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 5){
+        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 10){
             udpConnection.Receive(completition.data(), completition.size());
         }
         
@@ -84,7 +95,7 @@ void viscaControl::setup(){
         
         completition = vector<char>(3, 0);
         startTimeout = ofGetElapsedTimef();
-        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 5){
+        while(completition[1] != static_cast<char>(0x51) && ofGetElapsedTimef() - startTimeout < 10){
             udpConnection.Receive(completition.data(), completition.size());
         }
         

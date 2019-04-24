@@ -33,8 +33,11 @@ public:
     void presetRecallAfterSettingParameters(ofJson &json) override{
         if(isPersistent){
             cameraPosition = json["Cam_Position"];
+            cameraPositionGui = ofToString(vector<int>{cameraPosition[3] + (cameraPosition[2] * 16) + (cameraPosition[1] * 16 * 16) + (cameraPosition[0] * 16 * 16 * 16) , cameraPosition[7] + (cameraPosition[6] * 16) + (cameraPosition[5] * 16 * 16) + (cameraPosition[4] * 16 * 16 * 16)});
             cameraFocus = json["Cam_Focus"];
+            cameraFocusGui = ofToString(cameraFocus[3] + (cameraFocus[2] * 16) + (cameraFocus[1] * 16 * 16) + (cameraFocus[0] * 16 * 16 * 16));
             cameraZoom = json["Cam_Zoom"];
+            cameraZoomGui = ofToString(cameraZoom[3] + (cameraZoom[2] * 16) + (cameraZoom[1] * 16 * 16) + (cameraZoom[0] * 16 * 16 * 16));
             setCameraView.trigger();
         }
         isPersistent = false;
@@ -53,6 +56,9 @@ private:
     ofParameter<bool> right;
     ofParameter<void> getCameraView;
     ofParameter<void> setCameraView;
+    ofParameter<string> cameraPositionGui;
+    ofParameter<string> cameraFocusGui;
+    ofParameter<string> cameraZoomGui;
     
     ofxUDPManager udpConnection;
     vector<char> cameraPosition;

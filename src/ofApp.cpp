@@ -30,6 +30,8 @@
 #include "manualOscillatorBank.h"
 #include "viscaControl.h"
 #include "MirrorRenderer.h"
+#include "headerFromFile.h"
+#include "frameRecorder.h"
 
 #include "ofxOceanodeMidiController.h"
 
@@ -83,6 +85,8 @@ void ofApp::setup()
     reg->registerModel<scriptModule>("Scripting");
     reg->registerModel<manualOscillatorBank>("Generators");
     reg->registerModel<viscaControl>("VISCA");
+    reg->registerModel<headerFromFile>("RENDER");
+    reg->registerModel<ofxPm::frameRecorder>("RENDER");
     
     // register types
     treg->registerType<ofxPm::VideoFrame>();

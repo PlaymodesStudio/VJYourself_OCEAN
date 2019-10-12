@@ -93,6 +93,8 @@
 		A927ADF845D4C1CD10987F55 /* VideoSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118E3F678A0E7344AC2E45E6 /* VideoSink.cpp */; };
 		ADE367465D2A8EBAD4C7A8D9 /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADD194746185E2DA11468377 /* IpEndpointName.cpp */; };
 		AEEF210AFBFAC3A8AEFF37A2 /* VideoFileGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75B741D9BECFBA490C8AE9AF /* VideoFileGrabber.cpp */; };
+		B0B4D9C32351DD2000032505 /* ImageFileGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0B4D9C22351DD2000032505 /* ImageFileGrabber.cpp */; };
+		B0B4D9C62351E46A00032505 /* ofxOceanodeNodeMacro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0B4D9C52351E46A00032505 /* ofxOceanodeNodeMacro.cpp */; };
 		B67787D456EEA92A8355BA0B /* FeedbackDelayFilterNodeBased.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566F93D84191ADF0ADE60DEA /* FeedbackDelayFilterNodeBased.cpp */; };
 		B7559FEE382DBA7FB094D5E7 /* ofxOceanodeNodeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15C9896F6A32FCA280CD4B5 /* ofxOceanodeNodeRegistry.cpp */; };
 		B8C0CE8386649142DCA4F324 /* VideoSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B24CE6BD24558DCC97CEE17 /* VideoSource.cpp */; };
@@ -423,6 +425,10 @@
 		AF45987CEF73D6D1587AFFDA /* switcher.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = switcher.h; path = ../../../addons/ofxOceanode/src/Nodes/Default_Nodes/Modifiers/switcher.h; sourceTree = SOURCE_ROOT; };
 		AF53C1FCB4DC2DA249C71CE4 /* asn1t.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = asn1t.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/asn1t.h; sourceTree = SOURCE_ROOT; };
 		B070CD08427D967C9CE7C1CA /* VideoGrabberPS3EyeNodeBased.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VideoGrabberPS3EyeNodeBased.cpp; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberPS3EyeNodeBased.cpp; sourceTree = SOURCE_ROOT; };
+		B0B4D9C12351DD1F00032505 /* ImageFileGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageFileGrabber.h; path = ../../../addons/ofxPlaymodes/src/grabbers/ImageFileGrabber.h; sourceTree = "<group>"; };
+		B0B4D9C22351DD2000032505 /* ImageFileGrabber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageFileGrabber.cpp; path = ../../../addons/ofxPlaymodes/src/grabbers/ImageFileGrabber.cpp; sourceTree = "<group>"; };
+		B0B4D9C42351E46A00032505 /* ofxOceanodeNodeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOceanodeNodeMacro.h; path = ../../../addons/ofxOceanode/src/Nodes/ofxOceanodeNodeMacro.h; sourceTree = "<group>"; };
+		B0B4D9C52351E46A00032505 /* ofxOceanodeNodeMacro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxOceanodeNodeMacro.cpp; path = ../../../addons/ofxOceanode/src/Nodes/ofxOceanodeNodeMacro.cpp; sourceTree = "<group>"; };
 		B0DB4F31D285F52A28EAE204 /* VideoGrabberDeckLink.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VideoGrabberDeckLink.h; path = ../../../addons/ofxPlaymodes/src/grabbers/VideoGrabberDeckLink.h; sourceTree = SOURCE_ROOT; };
 		B11DB438E2A6EBD360F8BA50 /* ofxDatGuiFRM.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxDatGuiFRM.h; path = ../../../addons/ofxDatGui_PM/src/components/ofxDatGuiFRM.h; sourceTree = SOURCE_ROOT; };
 		B1CC96657896D2F948104F3D /* seed.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = seed.h; path = ../../../addons/ofxPoco/libs/openssl/include/openssl/seed.h; sourceTree = SOURCE_ROOT; };
@@ -1101,6 +1107,8 @@
 		6B8A921B73CC6BADD2D0E3A3 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				B0B4D9C52351E46A00032505 /* ofxOceanodeNodeMacro.cpp */,
+				B0B4D9C42351E46A00032505 /* ofxOceanodeNodeMacro.h */,
 				1611DA528262F51B8A4FBD22 /* Base_Nodes */,
 				4A0C0B233C38AF6788F3CE7D /* Default_Nodes */,
 				63A44DC38599839305F1F4D3 /* ofxOceanodeNode.cpp */,
@@ -1223,6 +1231,8 @@
 		77D11DDB1837FF4F29D2AAF9 /* grabbers */ = {
 			isa = PBXGroup;
 			children = (
+				B0B4D9C22351DD2000032505 /* ImageFileGrabber.cpp */,
+				B0B4D9C12351DD1F00032505 /* ImageFileGrabber.h */,
 				75B741D9BECFBA490C8AE9AF /* VideoFileGrabber.cpp */,
 				8B7056BE38ACFBE98C3FE605 /* VideoFileGrabber.h */,
 				46C75A77F20D5A22B8758DBD /* VideoGrabberDeckLink.cpp */,
@@ -2109,6 +2119,7 @@
 				4C3192DB1EAE1CFF29580749 /* oscillatorBank.cpp in Sources */,
 				7416EB8AFDAB615D36EC3137 /* phasor.cpp in Sources */,
 				47608E29666CD58C20E53408 /* mapper.cpp in Sources */,
+				B0B4D9C62351E46A00032505 /* ofxOceanodeNodeMacro.cpp in Sources */,
 				4838368B3C8561AD76D56D69 /* ranger.cpp in Sources */,
 				E1E0C08A53EAFC4A088F5BDC /* reindexer.cpp in Sources */,
 				BDE21E02C646BD31BEC13891 /* smoother.cpp in Sources */,
@@ -2139,6 +2150,7 @@
 				A4E5EDCCB2C332C2F3F54E41 /* FeedbackFilterNodeBased.cpp in Sources */,
 				4A4BF4F239EF328BA55E5E9D /* FrameInspector.cpp in Sources */,
 				305F9FA17D4D4EF3F11D42AF /* GammaFilter.cpp in Sources */,
+				B0B4D9C32351DD2000032505 /* ImageFileGrabber.cpp in Sources */,
 				CD5D370AE274077B5C59E16C /* GatorFilter.cpp in Sources */,
 				DAC99124587F4263B78D35AA /* HalfToneFilter.cpp in Sources */,
 				CF78CC039DA3BE4748897FF4 /* KaleidoscopeNodeBased.cpp in Sources */,
@@ -2268,7 +2280,7 @@
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
@@ -2360,6 +2372,7 @@
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"$(OF_CORE_FRAMEWORKS)",
@@ -2462,7 +2475,7 @@
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
@@ -2554,7 +2567,7 @@
 					../../../addons/ofxPoco/src,
 					../../../addons/ofxPoco/libs/openssl/include,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
@@ -2646,6 +2659,7 @@
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"$(OF_CORE_FRAMEWORKS)",
@@ -2748,6 +2762,7 @@
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"$(OF_CORE_FRAMEWORKS)",

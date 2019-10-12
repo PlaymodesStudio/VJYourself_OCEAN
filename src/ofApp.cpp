@@ -30,6 +30,7 @@
 #include "manualOscillatorBank.h"
 #include "viscaControl.h"
 #include "MirrorRenderer.h"
+#include "ImageFileGrabber.h"
 
 #include "ofxOceanodeMidiController.h"
 
@@ -79,6 +80,8 @@ void ofApp::setup()
     reg->registerModel<ofxPm::HalfToneFilter>("Video/Filter");
     reg->registerModel<ofxPm::inputProcessingFilter>("Video/Filter");
     reg->registerModel<ofxPm::MirrorRenderer>("Video/Filter");
+    reg->registerModel<ofxPm::ImageFileGrabber>("Video/Grabber");
+
 
     reg->registerModel<scriptModule>("Scripting");
     reg->registerModel<manualOscillatorBank>("Generators");
@@ -106,21 +109,23 @@ void ofApp::setup()
     
     // create controls (preset,bpm,midi tabs)
     controls = make_unique<ofxOceanodeControls>(container);
-    
-    container->loadPreset("Presets/SHOW/1--Multix_simple");
-    ofxOscSender sender;
-    sender.setup("localhost", 8000);
-    ofxOscMessage m;
-    m.setAddress("t/stop");
-    sender.sendMessage(m);
-    ofxOscMessage m2;
-    m2.setAddress("t/time");
-    m2.addFloatArg(0);
-    sender.sendMessage(m2);
-    sleep(2);
-    ofxOscMessage m3;
-    m3.setAddress("t/play");
-    sender.sendMessage(m3);
+
+//    // WNDR Sequence Start stuff
+//    /////////////////////////////
+//    container->loadPreset("Presets/SHOW/1--Multix_simple");
+//    ofxOscSender sender;
+//    sender.setup("localhost", 8000);
+//    ofxOscMessage m;
+//    m.setAddress("t/stop");
+//    sender.sendMessage(m);
+//    ofxOscMessage m2;
+//    m2.setAddress("t/time");
+//    m2.addFloatArg(0);
+//    sender.sendMessage(m2);
+//    sleep(2);
+//    ofxOscMessage m3;
+//    m3.setAddress("t/play");
+//    sender.sendMessage(m3);
 }
 
 //--------------------------------------------------------------

@@ -1,5 +1,6 @@
 ofxAubio
 ofxDatGui_PM
+ofxGStreamer
 ofxMidi
 ofxNetwork
 ofxOceanode

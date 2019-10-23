@@ -131,17 +131,18 @@ void ofApp::setup()
 //--------------------------------------------------------------
 void ofApp::update()
 {
-//    bool isMidiLearning = controls->get<ofxOceanodeMidiController>()->getIsMidiLearn();
-//    if(isMidiLearning) ofBackground(60,20,20);
-//    else ofBackground(20,20,20);
+
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    if(controls->get<ofxOceanodeMidiController>()->getIsMidiLearn()){
+        ofSetBackgroundColor(150, 200, 150);
+    }else{
+        ofSetBackgroundColor(60, 60, 60);
+    }
     ofSetColor(255,0,0);
     ofDrawBitmapString(ofToString(ofGetFrameRate()), glm::vec2(10,ofGetHeight() - 10));
-//    ofSetColor(0);
-//    ofDrawRectangle(0,0,640, 480);
 }
 
 //--------------------------------------------------------------
@@ -149,10 +150,11 @@ void ofApp::keyPressed(int key){
     if(ofGetKeyPressed(OF_KEY_COMMAND)){
         if(key == 'p') container->savePersistent();
         else if(key == 'u') container->updatePersistent();
-        else if(key == 'c') container->collapseGuis();
+        else if(key == 'k') container->collapseGuis();
         else if(key == 'e') container->expandGuis();
         else if(key == 's') container->saveCurrentPreset();
         else if(key == 'r') container->resetPhase();
+        else if(key == 'l') controls->get<ofxOceanodeMidiController>()->setIsMidiLearn(!controls->get<ofxOceanodeMidiController>()->getIsMidiLearn());
     }
 }
 

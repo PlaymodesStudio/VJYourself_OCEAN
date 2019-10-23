@@ -95,6 +95,9 @@ void ofApp::setup()
     container = make_shared<ofxOceanodeContainer>(reg, treg);
     canvas.setContainer(container);
     canvas.setup();
+    
+    // create controls (preset,bpm,midi tabs)
+    controls = make_unique<ofxOceanodeControls>(container);
 
     // persistent ...
     container->loadPersistent();
@@ -106,9 +109,6 @@ void ofApp::setup()
     // call a function in one of the persistent modules
     dynamic_cast<ofxPm::VideoTrioRendererNodeBased&>(vTrio.getNodeModel()).showMyExternalWindow(true);
     */
-    
-    // create controls (preset,bpm,midi tabs)
-    controls = make_unique<ofxOceanodeControls>(container);
 
 //    // WNDR Sequence Start stuff
 //    /////////////////////////////

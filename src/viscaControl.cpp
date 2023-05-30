@@ -11,23 +11,18 @@ void viscaControl::setup(){
     cameraPosition.resize(8, -1);
     cameraFocus.resize(4, -1);
     cameraZoom.resize(4, -1);
-    parameters->add(ip.set("IP", "192.168.5.163"));
-    parameters->add(port.set("Port", "1259"));
+    addParameter(ip.set("IP", "192.168.5.163"));
+    addParameter(port.set("Port", "1259"));
     //parameters->add(up.set("Up", false));
     //parameters->add(down.set("Down", false));
     //parameters->add(left.set("Left", false));
     //parameters->add(right.set("Right", false));
-    parameters->add(getCameraView.set("Get Cam View"));
-    parameters->add(setCameraView.set("Set Cam View"));
-    auto &info = addParameterToGroupAndInfo(cameraPositionGui.set("Camera Pos", ""));
-    info.isSavePreset = false;
-    info.isSaveProject = false;
-    auto &info2 = addParameterToGroupAndInfo(cameraFocusGui.set("Camera Focus", ""));
-    info2.isSavePreset = false;
-    info2.isSaveProject = false;
-    auto &info3 = addParameterToGroupAndInfo(cameraZoomGui.set("Camera Zoom", ""));
-    info3.isSavePreset = false;
-    info3.isSaveProject = false;
+    addParameter(getCameraView.set("Get Cam View"));
+    addParameter(setCameraView.set("Set Cam View"));
+    //TODO: Revisar flags
+    addParameter(cameraPositionGui.set("Camera Pos", ""), ofxOceanodeParameterFlags_DisableSavePreset | ofxOceanodeParameterFlags_DisableSaveProject);
+    addParameter(cameraFocusGui.set("Camera Focus", ""), ofxOceanodeParameterFlags_DisableSavePreset | ofxOceanodeParameterFlags_DisableSaveProject);
+    addParameter(cameraZoomGui.set("Camera Zoom", ""), ofxOceanodeParameterFlags_DisableSavePreset | ofxOceanodeParameterFlags_DisableSaveProject);
     
     listeners.push(ip.newListener([this](string &_ip){
         ofxUDPSettings settings;

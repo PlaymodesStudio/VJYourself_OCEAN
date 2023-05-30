@@ -26,9 +26,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    ofxOceanodeCanvas canvas;
-    unique_ptr<ofxOceanodeControls> controls;
-    shared_ptr<ofxOceanodeContainer> container;
+    ofxOceanode oceanode;
     
     bool    isGuiCollapsed;
 
